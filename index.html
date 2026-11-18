@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("is-preparing");</script>
+  <style>html.is-preparing{overflow:hidden}html.is-preparing #page-shell{visibility:hidden}html.is-revealing #page-shell{visibility:visible}.boot-screen{display:none}.is-preparing .boot-screen{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:#08080b;color:#f6f3f8;font-family:system-ui,sans-serif}.boot-screen[hidden]{display:none!important}</style>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%2308080b%27/%3E%3Ctext x=%2716%27 y=%2723%27 text-anchor=%27middle%27 font-size=%2723%27 fill=%27%23e64b5c%27%3E%E7%BE%BD%3C/text%3E%3C/svg%3E">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="认识华羽：羽毛球装备、成人训练、明日之星人才计划，以及一支真正上场的团队。">
+  <meta name="theme-color" content="#0b0b0e">
+  <title>华羽 HUAYU｜装备、成人训练与明日之星</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion/journey/orbit.css">
+  <link rel="stylesheet" href="motion/intro/intro.css">
+  <link rel="stylesheet" href="motion/journey/journey.css">
+  <link rel="stylesheet" href="motion/equipment/equipment.css">
+  <link rel="stylesheet" href="motion/media-space/media-space.css?v=full-preload-20261110">
+  <link rel="stylesheet" href="motion/site.css?v=entry-first-20261112">
+  <script type="importmap">{"imports":{"three":"./motion/vendor/three-0.187.0/build/three.module.js","three/addons/":"./motion/vendor/three-0.187.0/examples/jsm/"}}</script>
+</head>
+<body>
+  <section class="boot-screen" data-boot aria-label="准备华羽空间" data-aria-zh="准备华羽空间" data-aria-en="Preparing Huayu">
+    <div class="boot-panel">
+      <div class="boot-wordmark"><strong>华羽</strong><span>HUAYU</span></div>
+      <div class="boot-cards">
+        <article class="boot-card" data-boot-card="people" data-active="true" aria-labelledby="boot-people-title" aria-hidden="false">
+          <svg class="boot-card-art" viewBox="0 0 360 250" fill="none" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="boot-people-fade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="white"/><stop offset=".76" stop-color="white"/>
+                <stop offset="1" stop-color="black"/>
+              </linearGradient>
+              <mask id="boot-people-mask"><rect width="360" height="250" fill="url(#boot-people-fade)" stroke="none"/></mask>
+            </defs>
+            <g mask="url(#boot-people-mask)" stroke-width="1.05">
+              <g stroke="#b9a6cc" opacity=".65">
+                <path d="M39 245 40 213C42 200 55 190 62 176L70 161C74 154 83 151 91 148L90 133C86 127 81 125 72 124L57 122C51 121 51 118 54 113L53 108 56 103 55 99C54 96 61 94 62 91L63 84C66 80 71 79 72 75C76 68 89 68 98 72C111 74 120 84 122 94C126 106 119 119 109 125L103 131 105 145C112 151 116 163 118 176"/>
+                <path d="M75 74C83 75 84 81 82 88L88 98C93 93 98 96 97 101C97 106 93 109 87 109M121 94C132 89 141 96 144 107C147 119 147 137 145 150M125 100C127 119 120 134 122 151M64 174C75 162 89 154 103 155L112 161M70 161C79 150 94 146 105 149M85 176C79 187 80 207 82 225M48 212C62 205 74 205 84 209"/>
+              </g>
+              <g stroke="#e2dbe8" opacity=".92">
+                <path fill="#09080c" d="M106 250C106 227 111 202 117 181C122 159 133 145 150 137L177 124C181 116 182 106 181 98C174 92 169 88 165 81C158 79 153 72 153 64L149 65 150 54 147 56C149 46 153 38 158 32L155 33 162 25 160 25 172 18 171 16 181 13C185 8 190 8 196 9L203 5 210 7 220 4 216 9C231 9 242 14 248 20L239 18 249 26C243 24 240 24 238 25C239 31 240 35 244 39L253 44C255 46 251 50 252 54L255 60 254 67C260 74 260 77 254 80L243 84C237 87 234 91 233 98L232 114 235 132C245 137 258 142 269 148C281 154 286 167 291 184L309 237 309 250Z" stroke="none"/>
+                <path d="M106 250C106 227 111 202 117 181C122 159 133 145 150 137L177 124C181 116 182 106 181 98M165 81C158 79 153 72 153 64L149 65 150 54 147 56C149 46 153 38 158 32L155 33 162 25 160 25 172 18 171 16 181 13C185 8 190 8 196 9L203 5 210 7 220 4 216 9C231 9 242 14 248 20L239 18 249 26C243 24 240 24 238 25C239 31 240 35 244 39L253 44C255 46 251 50 252 54L255 60 254 67C260 74 260 77 254 80L243 84C237 87 234 91 233 98L232 114 235 132"/>
+                <path d="M181 98 173 91 170 87 165 85 165 81M178 101 182 96M195 14C205 15 211 22 210 29L206 32 204 42 201 40 201 51 197 53C191 44 183 44 180 49C174 57 181 66 190 67L197 66C203 71 208 75 215 76L237 75 253 76M211 25C219 24 232 26 238 31M201 32 203 39M184 52C189 49 193 54 192 59M232 104 230 115"/>
+                <path d="M177 124C193 127 211 135 230 145C238 144 242 139 239 133M179 129C195 132 214 141 230 150C237 147 242 142 242 136M235 132C245 137 258 142 269 148C281 154 286 167 291 184L309 237M151 137C134 147 126 164 121 180L105 222C127 210 151 220 168 236M164 152C177 166 174 181 171 199L168 236M163 186 168 229M114 188 108 211M109 224 107 243M272 157C279 178 279 206 280 229M286 181 291 215"/>
+                <path d="m247 168 8 1 2 3 3-3 10 1m-21 2 6 1 2 4 3-4 8 1m-11 2 5 0" stroke-width="1.4"/>
+              </g>
+            </g>
+            <path class="boot-art-accent" d="M121 191C66 214 5 222 10 197C14 180 30 168 48 158M273 139C317 117 348 91 348 62C348 40 336 23 314 18"/>
+            <g transform="translate(297 31)"><g class="boot-shuttle"><path d="m-4 12 7-20 3 2-3 12 7-10 3 3-9 11 10-5 2 4-17 9-5-6Z M-1 12l7-17m-4 18 10-8m-11 10 10-4"/><path class="boot-art-accent" d="m-4 12 5 6q-7 6-10 1t5-7Z"/></g></g>
+            <g class="boot-art-echo" transform="translate(322 93) scale(.8)"><path d="m-4 12 7-20 3 2-3 12 7-10 3 3-9 11 10-5 2 4-17 9-5-6Z M-1 12l7-17m-4 18 10-8"/></g>
+          </svg>
+          <div class="boot-card-body">
+            <p class="boot-card-kicker"><span data-zh>人物</span><span data-en>People</span><span class="boot-card-index"> · 01</span></p>
+            <h2 class="boot-card-title" id="boot-people-title"><span data-zh>认识这支<em>队伍</em>。</span><span data-en>Meet <em>the team.</em></span></h2>
+            <div class="boot-card-rule" aria-hidden="true"></div>
+            <div class="boot-card-copy"><p><span data-zh>刘辉｜华羽品牌创始人</span><span data-en>Liu Hui · Founder of Huayu</span></p><p><span data-zh>与<span data-boot-member-count>16</span>位成员，一起上场。</span><span data-en>Take the court with our <span data-boot-member-count>16</span>-member team.</span></p></div>
+          </div>
+        </article>
+        <article class="boot-card" data-boot-card="equipment" data-active="false" aria-labelledby="boot-equipment-title" aria-hidden="true">
+          <svg class="boot-card-art" viewBox="0 0 360 250" fill="none" aria-hidden="true" focusable="false">
+            <defs><pattern id="boot-string-grid" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 6V0h6" stroke="#b9adcb" stroke-width=".65" opacity=".65"/></pattern></defs>
+            <path class="boot-art-accent" d="M126 171C50 189 18 221 69 225c85 7 199-51 235-102 22-29 16-58-7-78"/>
+            <g class="boot-art-line" transform="rotate(-25 102 123)"><ellipse cx="102" cy="75" rx="33" ry="49" fill="url(#boot-string-grid)"/><ellipse cx="102" cy="75" rx="35" ry="51"/><path d="m88 122 10 17h8l10-17m-14 17v67m-4-1h8l1 29h-10l1-29Zm0 5 8 4m-8 3 9 4m-9 3 9 4"/></g>
+            <g class="boot-art-line"><path d="m181 52-28 10-18 43 23 11 10-21-3 128q55 11 103-2l-8-126 10 21 24-12-18-43-29-9-32 18-34-18Z"/><path d="m181 52 4 10 30 19 30-19 2-10m-72 9-8 35m89-34 4 33m-88 120q42 8 89-1m-82-91-4 69m65-64 13 65"/><path class="boot-art-muted" d="m160 66-8 25m121-24 9 25m-78 21h24m-21 4h18"/></g>
+            <path class="boot-art-accent" d="m139 98 18 8m113 0 19-9m-80-29 6 5 6-5m-53 146q46 8 96-1"/>
+            <g transform="translate(297 31)"><g class="boot-shuttle"><path d="m-4 12 7-20 3 2-3 12 7-10 3 3-9 11 10-5 2 4-17 9-5-6Z M-1 12l7-17m-4 18 10-8m-11 10 10-4"/><path class="boot-art-accent" d="m-4 12 5 6q-7 6-10 1t5-7Z"/></g></g>
+            <g class="boot-art-echo" transform="translate(322 93) scale(.8)"><path d="m-4 12 7-20 3 2-3 12 7-10 3 3-9 11 10-5 2 4-17 9-5-6Z M-1 12l7-17m-4 18 10-8"/></g>
+          </svg>
+          <div class="boot-card-body">
+            <p class="boot-card-kicker"><span data-zh>装备</span><span data-en>Equipment</span><span class="boot-card-index"> · 02</span></p>
+            <h2 class="boot-card-title" id="boot-equipment-title"><span data-zh>从球拍，到<em>球服</em>。</span><span data-en>From rackets to <em>teamwear.</em></span></h2>
+            <div class="boot-card-rule" aria-hidden="true"></div>
+            <div class="boot-card-copy"><p><span data-zh>屠夫 · 紫电青霜 · 华羽球服</span><span data-en>Tufu · Zidian Qingshuang · Huayu teamwear</span></p><p><span data-zh>进入后，可旋转查看装备。</span><span data-en>Rotate the gear to explore it after entering.</span></p></div>
+          </div>
+        </article>
+        <article class="boot-card" data-boot-card="training" data-active="false" aria-labelledby="boot-training-title" aria-hidden="true">
+          <svg class="boot-card-art" viewBox="0 0 360 250" fill="none" aria-hidden="true" focusable="false">
+            <defs><pattern id="boot-net-grid" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 5V0h5" stroke="#b9adcb" stroke-width=".6" opacity=".6"/></pattern></defs>
+            <g class="boot-art-line"><path d="m30 218 83-106h131l88 106H30Zm18-12h267M94 155h186m-80-43 1 106m-89-92h133M91 155l-37 63m219-63 35 63"/><path d="M91 119v47m188-47v47"/><path d="m92 121 186 1v30H92v-31Z" fill="url(#boot-net-grid)"/></g>
+            <path class="boot-art-muted" d="m30 218-20 23m322-23 18 23m-237-129-6-13m137 13 7-13"/>
+            <path class="boot-art-accent" d="M73 174q12 2 17 11C128 100 209 64 291 43"/>
+            <g transform="translate(297 31)"><g class="boot-shuttle"><path d="m-4 12 7-20 3 2-3 12 7-10 3 3-9 11 10-5 2 4-17 9-5-6Z M-1 12l7-17m-4 18 10-8m-11 10 10-4"/><path class="boot-art-accent" d="m-4 12 5 6q-7 6-10 1t5-7Z"/></g></g>
+            <g class="boot-art-echo" transform="translate(322 93) scale(.8)"><path d="m-4 12 7-20 3 2-3 12 7-10 3 3-9 11 10-5 2 4-17 9-5-6Z M-1 12l7-17m-4 18 10-8"/></g>
+          </svg>
+          <div class="boot-card-body">
+            <p class="boot-card-kicker"><span data-zh>训练</span><span data-en>Training</span><span class="boot-card-index"> · 03</span></p>
+            <h2 class="boot-card-title" id="boot-training-title"><span data-zh>从你的<em>目标</em>出发。</span><span data-en>Start with <em>your goals.</em></span></h2>
+            <div class="boot-card-rule" aria-hidden="true"></div>
+            <div class="boot-card-copy"><p><span data-zh>周训 · 其他训练 · 私教</span><span data-en>Zhouxun · Other training · Private coaching</span></p><p><span data-zh>找到适合自己的训练方式。</span><span data-en>Find the right training approach for you.</span></p></div>
+          </div>
+        </article>
+        <article class="boot-card" data-boot-card="stars" data-od-id="boot-stars" data-active="false" aria-labelledby="boot-stars-title" aria-hidden="true">
+          <svg class="boot-card-art" viewBox="0 0 360 250" fill="none" aria-hidden="true" focusable="false">
+            <g class="boot-art-muted"><path d="M32 209 113 150H267l63 59M77 209l59-59m132 59-35-59M48 195h267m-170 14 18-59m51 59-11-59"/><path d="M57 75v48m-4-6h12m242 31v35"/></g>
+            <g class="boot-art-line">
+              <path d="M68 215q3-45 21-70l16-18 20-9 5-16m-21-13q-6-10-4-22 2-17 20-19 18-4 28 9l2 14 6 11-6 3-2 13q-4 7-14 5l-2 16 22 17 26 13 31-11 5 7-34 19q-8 3-16 0l-28-11-8 37m-31-50q11 6 15 21l-10 39m12-95q7 6 14 1m-15 13 13 6 9-7"/>
+              <path d="M216 212q-1-23 3-43l12-19 18-8 2-13m-12-8q-5-10-2-20 6-13 22-12 13 2 18 12l1 12 5 7-5 3-3 10-11 1v10l20 14 10 24m-69 16 8-22m15-31q8 10 17 2m-28-41q13 0 19-8 5 8 15 10m-34 14 8 3"/>
+              <path d="M122 99q-8-3-7-9t9-3m11-23q9 7 19 7m-35 15q4 1 4 6M220 143l17-9m-17 8 16 2m47 14 18-32"/>
+              <ellipse cx="306" cy="112" rx="8" ry="18" transform="rotate(24 306 112)"/>
+            </g>
+            <path class="boot-art-accent" d="M48 154C77 98 184 44 291 48m-35 5 35-5-19-17"/>
+            <g transform="translate(305 40)"><g class="boot-shuttle"><path d="m-4 12 7-20 3 2-3 12 7-10 3 3-9 11 10-5 2 4-17 9-5-6Z M-1 12l7-17m-4 18 10-8m-11 10 10-4"/><path class="boot-art-accent" d="m-4 12 5 6q-7 6-10 1t5-7Z"/></g></g>
+          </svg>
+          <div class="boot-card-body">
+            <p class="boot-card-kicker"><span data-zh>明日之星</span><span data-en>Next Stars</span><span class="boot-card-index"> · 04</span></p>
+            <h2 class="boot-card-title" id="boot-stars-title"><span data-zh>成为<em>同行者</em>。</span><span data-en>Grow <em>with us.</em></span></h2>
+            <div class="boot-card-rule" aria-hidden="true"></div>
+            <div class="boot-card-copy"><p><span data-zh>训练支持与教学实践。</span><span data-en>Training support and teaching practice.</span></p><p><span data-zh>了解考核安排，找到自己的方向。</span><span data-en>Explore the assessment and find your path.</span></p></div>
+          </div>
+        </article>
+        <article class="boot-card" data-boot-card="on-court" data-od-id="boot-on-court" data-active="false" aria-labelledby="boot-on-court-title" aria-hidden="true">
+          <!-- 华羽品牌片静帧，00:18.28；内联让短暂的等待也不需要另发图片请求。 -->
+          <div class="boot-card-art boot-card-photo" aria-hidden="true">
+            <img src="data:image/webp;base64,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" width="640" height="440" alt="">
+          </div>
+          <div class="boot-card-body">
+            <p class="boot-card-kicker"><span data-zh>球场内</span><span data-en>On court</span><span class="boot-card-index"> · 05</span></p>
+            <h2 class="boot-card-title" id="boot-on-court-title"><span data-zh>在球场，成为<em>队友</em>。</span><span data-en>On court, <em>together.</em></span></h2>
+            <div class="boot-card-rule" aria-hidden="true"></div>
+            <div class="boot-card-copy"><p><span data-zh>训练、配合与场上的日常。</span><span data-en>Practice, partnership and everyday play.</span></p><p><span data-zh>每一拍，都有来有回。</span><span data-en>Every rally goes both ways.</span></p></div>
+          </div>
+        </article>
+        <article class="boot-card" data-boot-card="off-court" data-od-id="boot-off-court" data-active="false" aria-labelledby="boot-off-court-title" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" class="boot-card-art" viewBox="0 0 360 250" fill="none" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="boot-edit-desk" x1="204" y1="144" x2="199" y2="244" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#292031"/><stop offset="1" stop-color="#101015" stop-opacity=".25"/>
+              </linearGradient>
+              <linearGradient id="boot-edit-jacket" x1="71" y1="126" x2="91" y2="235" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#312a40"/><stop offset="1" stop-color="#101015"/>
+              </linearGradient>
+              <linearGradient id="boot-edit-frame" x1="178" y1="52" x2="310" y2="142" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#211925"/><stop offset="1" stop-color="#140e18"/>
+              </linearGradient>
+              <linearGradient id="boot-edit-fade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset=".86" stop-color="white"/><stop offset="1" stop-color="black"/>
+              </linearGradient>
+              <mask id="boot-edit-bottom"><rect width="360" height="250" fill="url(#boot-edit-fade)" stroke="none"/></mask>
+              <clipPath id="boot-edit-screen"><path d="m169 47 149 11 2 85-149-10Z"/></clipPath>
+              <g id="boot-edit-jersey">
+                <path d="M-5 4v6l-9 4-6 11-2 36h43l-3-33-4-11-10-6V4" fill="#63293d" stroke="#b45f73" stroke-width=".76"/>
+                <path d="M-7-2q0-8 7-9 8 0 8 8l-1 9-5 4-5-2-3-4Z" fill="#2a1924" stroke="#b4828a" stroke-width=".7"/>
+                <path d="M-6-2q-3-8 4-10 8-3 11 6L7-2 5-6q-5 4-11 4Z" fill="#1b121b" stroke="#b4828a" stroke-width=".64"/>
+                <path d="m-5 11 5 5 7-4m-20 5 4 11m20-11-4 12m-22 2 7 6 17-6 5 4-8 6-16 2-7-7m7 12 12 4 15-5m-7-21 4 1" stroke="#cd8291" stroke-width=".69" opacity=".83"/>
+              </g>
+            </defs>
+            <g mask="url(#boot-edit-bottom)">
+              <path d="M12 161 126 119l156 12 69 71-89 39H47Z" fill="url(#boot-edit-desk)" stroke="#54425c" stroke-width=".9"/>
+              <path d="m138 136 49-10m-63 22 46-7m-21 28 185 39m-82 28 95-31" stroke="#8d7199" stroke-width=".7" opacity=".38"/>
+              <path d="M167 147c-3 11-6 16-19 23l9 7 87-6 19-11-37-11Z" fill="#18121d" stroke="#8d749b"/>
+              <path d="m218 134-2 24 20 2 7-23" fill="#231a2b" stroke="#a98bb8"/>
+              <path d="m160 38 165 12 4 101-165-11Z" fill="#17121c" stroke="#c3aaca" stroke-width="1.27"/>
+              <path d="m165 43 156 11 3 92-156-11Z" fill="url(#boot-edit-frame)" stroke="#6f557a"/>
+              <g clip-path="url(#boot-edit-screen)">
+                <path d="M168 46h154v100H168Z" fill="url(#boot-edit-frame)" stroke="none"/>
+                <path d="m173 73 149 11m-143-8 145 11" stroke="#736078" stroke-width=".7" opacity=".44"/>
+                <path d="m210 58 13 1 5 4 6-3 13 1-4 5-8-1-7 4-7-5-8-1m-3 2 11 1 7 4 7-3 10 1" stroke="#9c899f" stroke-width="1.2" opacity=".65"/>
+                <use href="#boot-edit-jersey" transform="translate(171 85) scale(.75)" opacity=".68"/>
+                <use href="#boot-edit-jersey" transform="translate(188 84) scale(.81)" opacity=".82"/>
+                <use href="#boot-edit-jersey" transform="translate(207 88) scale(.87)" opacity=".94"/>
+                <use href="#boot-edit-jersey" transform="translate(224 86) scale(.89)"/>
+                <use href="#boot-edit-jersey" transform="translate(271 91) scale(-.91 .91)"/>
+                <use href="#boot-edit-jersey" transform="translate(288 91) scale(-.85 .85)" opacity=".9"/>
+                <use href="#boot-edit-jersey" transform="translate(306 94) scale(-.83 .83)" opacity=".78"/>
+                <use href="#boot-edit-jersey" transform="translate(320 96) scale(-.77 .77)" opacity=".66"/>
+                <path d="M240 99v-5l-5-5-2-11q1-9 9-10 10-1 12 8l-1 11-5 6 1 7 11 6 5 15-4 3v18h-32l1-18-5-2 4-14Z" fill="#c7bbc9" stroke="#eadbe8" stroke-width=".82"/>
+                <path d="M240 94l-5-5-2-11q1-9 9-10 10-1 12 8l-1 11-5 6-3 2Z" fill="#60404a" stroke="#dbb9c4" stroke-width=".7"/>
+                <path d="M234 79q-4-10 3-12 7-5 14 0l3 6-1 6-4-6-7 1-6 1Z" fill="#271e2b" stroke="#c2a2bd" stroke-width=".75"/>
+                <path d="m234 123 15 5 8-3 4 1-6 5-12 1-13-4m11-28 4 4 5-4m-14-16 3 1m8-1 2 1" stroke="#684955" stroke-width=".85"/>
+                <path d="m229 112 5 1 2 2 2-2 4 1" stroke="#615166" stroke-width=".78"/>
+              </g>
+              <path d="m174 59-.2-7 8 .6m131 15-.1-6-8-.6m9 71v6l-8-.5m-130-15v6l7 .5" stroke="#e2cfde" stroke-width=".87" opacity=".76"/>
+              <circle cx="310" cy="69" r="1.75" fill="#e64b5c" stroke="none"/>
+              <path d="m163 141 166 10m-83-2 14 1" stroke="#9877a7" opacity=".79"/>
+              <path d="m158 173 112-12 61 35-98 32-84-26Z" fill="#24192b" stroke="#a087a9" stroke-width="1.14"/>
+              <path d="m149 202 84 26 98-32-.4 6-97 34-84-27Z" fill="#15101a" stroke="#7e658c" stroke-width=".85"/>
+              <path d="m177 177 94-9 40 23-81 23Z" fill="#1b1523" stroke="#796286"/>
+              <path d="m192 185 74-11 12 7-70 15m4 5 71-17m-61 20 69-18m-59 22 67-19" stroke="#b6a0bf" stroke-width="2" stroke-dasharray="5 3.6" opacity=".83"/>
+              <path d="m245 182 10-2m8 9 8-2m-53 13 6-1" stroke="#dc6578" stroke-width="2.3"/>
+              <path d="m278 178 12-2 13 7-12 3Z" fill="#4b304d" stroke="#876597" stroke-width=".8"/>
+              <path d="M28 247c1-24 4-59 11-77 8-21 23-30 41-36l17-9 17 2 15 14c13 7 26 17 34 34l10 16-26 22-16-16 2 35-3 15Z" fill="url(#boot-edit-jacket)" stroke="#c4adcb" stroke-width="1.26"/>
+              <path d="M40 167c9-16 21-21 34-24m-28 42q15-23 40-26m37-16q5 12 4 21m-31 3q13 11 19 27l10 35m-86-16q5-24 19-36" stroke="#8d789c" opacity=".78"/>
+              <path d="M95 123c1-4-2-10-6-16-12-3-21-14-22-27-1-17 7-30 20-34 14-4 26 4 32 17l4 16 3 10 7 9-7 5-3 12-7 6-10-1 4 12-11 6-20-6Z" fill="#312333" stroke="#e0c6d6" stroke-width="1.3"/>
+              <path d="M67 84c-4-8-7-15-5-23 2-8 8-14 15-17 6-7 20-10 32-4l8 5-3 2 8 7-6 1 2 8-9-3-7 11-6 3c-4-4-8-4-10 0-2 5 1 10 5 11l-1 11-6 6-10-8Z" fill="#17131d" stroke="#c1a8c7" stroke-width="1.18"/>
+              <path d="M67 63c4-11 12-16 23-17m-7 9c7-6 16-8 25-6m-16 27q-5-2-5 3m5 4 3-2m20 25 10 1m-18 11-9-4" stroke="#a68ba9"/>
+              <path d="m95 78 17 3 5-2 9 4-1 10-7 2-5-4-1-9m14 2 3 1" stroke="#dbbdce" stroke-width="1.04"/>
+              <path d="m117 85 4 1m3 13 5 1m-15 11q4 2 8 0" stroke="#b89ab2" stroke-width=".8"/>
+              <path d="M78 135c7-10 16-11 25-6m-20 7q8-8 17-4m-20 0c-5 2-8 8-5 14l5 6q6 4 10-1l1-8-7-10Z" fill="#221a2a" stroke="#ab8cb8" stroke-width="1.1"/>
+              <path d="m78 141 5 7m-2-10 5 6" stroke="#d25c76" opacity=".78"/>
+              <path d="M120 172c4-4 11-5 16-1l21 19 32-9 13-10 10-3 9 3-1 3-11 1 9 3-2 3-10 3-10 3c-12 6-27 15-41 21-9 3-15 2-21-3l-17-18Z" fill="#332434" stroke="#d7b7cb" stroke-width="1.25"/>
+              <path d="m189 181 8 2m-4 4 11-4m-60 18q8-1 14-5" stroke="#b089a9" opacity=".86"/>
+              <path d="M110 174c5-7 15-12 22-8l17 12-1 10-13 14-19-11c-5-4-7-11-6-17Z" fill="#332940" stroke="#c8afd2" stroke-width="1.1"/>
+              <path d="m136 180-11 14m15-11-11 13" stroke="#927ba3" opacity=".77"/>
+            </g>
+          </svg>
+          <div class="boot-card-body">
+            <p class="boot-card-kicker"><span data-zh>球场外</span><span data-en>Off court</span><span class="boot-card-index"> · 06</span></p>
+            <h2 class="boot-card-title" id="boot-off-court-title"><span data-zh>球场之外，<em>也在一起</em>。</span><span data-en>Together <em>beyond the court.</em></span></h2>
+            <div class="boot-card-rule" aria-hidden="true"></div>
+            <div class="boot-card-copy"><p><span data-zh>认识华羽的另一面。</span><span data-en>Meet Huayu away from the court.</span></p><p><span data-zh>从品牌影片，到团队日常。</span><span data-en>From our brand film to team life.</span></p></div>
+          </div>
+        </article>
+      </div>
+      <div class="boot-dots" aria-hidden="true"><span data-boot-dot data-active="true"></span><span data-boot-dot data-active="false"></span><span data-boot-dot data-active="false"></span><span data-boot-dot data-active="false"></span><span data-boot-dot data-active="false"></span><span data-boot-dot data-active="false"></span></div>
+      <div class="boot-footer">
+        <div class="boot-status"><p class="boot-label" data-boot-label role="status">加载展示资源</p><div class="boot-number"><span data-boot-percent>00</span><span class="boot-unit">%</span></div></div>
+        <div class="boot-progress" role="progressbar" aria-label="资源准备进度" data-aria-zh="资源准备进度" data-aria-en="Preparation progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+        <div class="boot-actions" data-boot-actions hidden><button type="button" data-boot-retry><span data-zh>重新加载</span><span data-en>Retry</span></button><button type="button" data-boot-simple><span data-zh>简化浏览</span><span data-en>Browse simply</span></button></div>
+      </div>
+    </div>
+  </section>
+  <div id="page-shell">
+  <canvas id="motion-canvas" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main" ><span data-zh>跳到主要内容</span><span data-en>Skip to content</span></a>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="华羽 Huayu"><strong>华羽</strong><span>HUAYU</span></a>
+    <nav class="main-nav" aria-label="主要导航" data-aria-zh="主要导航" data-aria-en="Main navigation">
+      <a class="text-link" href="#team" ><span data-zh>团队</span><span data-en>Team</span></a>
+      <a class="text-link" href="#equipment" ><span data-zh>装备</span><span data-en>Equipment</span></a>
+      <a class="text-link" href="#training" ><span data-zh>成人训练</span><span data-en>Training</span></a>
+      <a class="text-link" href="#next-stars" ><span data-zh>明日之星</span><span data-en>Next Stars</span></a>
+      
+    </nav>
+    <button class="language-toggle" type="button" aria-label="Switch to English" hidden>EN</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" hidden><span data-zh>菜单</span><span data-en>Menu</span></button>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="手机导航" data-aria-zh="手机导航" data-aria-en="Mobile navigation" hidden>
+      <a class="text-link" href="#team" ><span data-zh>团队</span><span data-en>Team</span></a>
+      <a class="text-link" href="#equipment" ><span data-zh>装备</span><span data-en>Equipment</span></a><a class="text-link" href="#training" ><span data-zh>成人训练</span><span data-en>Training</span></a><a class="text-link" href="#next-stars" ><span data-zh>明日之星</span><span data-en>Next Stars</span></a><a class="text-link" href="#contact" ><span data-zh>联系华羽</span><span data-en>Contact Huayu</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="story-track" data-story-track>
+<div class="story-host" id="story-host" data-motion-surface tabindex="0" aria-label="华羽空间"></div>
+<div class="story-copy">
+<section id="departure" class="departure" data-story-anchor="departure" aria-labelledby="hero-title">
+<img class="static-hero" data-asset="motion/intro/assets/fallback.jpg" alt="">
+<div id="intro-brand" class="intro-brand"><img data-asset="motion/intro/assets/huayu-brand-lockup.svg" width="850" height="210" alt="华羽 HUAYU" fetchpriority="high"></div>
+<h1 id="hero-title"><span data-zh>从我，<br>到<em>我们</em>。</span><span data-en>From me.<br>To <em>us</em>.</span></h1>
+<p class="intro-note"><span data-zh>华羽羽毛球。<br>装备、成人训练，与教练成长。</span><span data-en>Huayu badminton.<br>Equipment, adult training and coach development.</span></p>
+<nav class="business"><a href="#training"><span data-zh>成人训练</span><span data-en>Adult training</span></a><a href="#equipment"><span data-zh>看装备</span><span data-en>Equipment</span></a><a href="#next-stars"><span data-zh>明日之星</span><span data-en>Next Stars</span></a></nav></section>
+<section id="portal" class="journey-portal" data-story-anchor="portal"><div class="scene-copy"><h2><span data-zh>这一拍，<br>向前。</span><span data-en>One shot.<br>Forward.</span></h2><p><span data-zh>沿着击球的方向，走进我们的球场。</span><span data-en>Follow the flight into our court.</span></p></div></section>
+<section id="court" class="journey-court" data-story-anchor="court"><div class="scene-copy"><h2><span data-zh>在同一片场地，<br>成为队友。</span><span data-en>One court.<br>A team takes shape.</span></h2></div><img loading="lazy" class="static-court" data-asset="motion/journey/assets/court-fallback.jpg" alt="羽毛球场景静帧"></section>
+<section id="film" class="journey-film" data-story-anchor="film">
+      <figure class="film-card">
+        <h2><span data-zh>球场之外，也在一起。</span><span data-en>Together, beyond the court.</span></h2>
+        <div id="brand-film" data-od-id="brand-film">
+          <img width="480" height="270" alt="" data-film-poster>
+          <button type="button" data-film-play hidden><span data-zh>播放华羽品牌片</span><span data-en>Play the Huayu film</span></button>
+        </div>
+        <figcaption><span><span data-zh>《华羽》品牌宣传片</span><span data-en>The Huayu brand film</span></span><span class="film-actions"><button type="button" class="text-link" data-film-cover hidden><span data-zh>返回封面</span><span data-en>Back to cover</span></button><a class="text-link" href="https://www.bilibili.com/video/BV1uVJF6AEbf/" target="_blank" rel="noopener noreferrer"><span data-zh>B站观看</span><span data-en>Watch on Bilibili</span></a></span></figcaption>
+      </figure>
+</section>
+    <section class="team-section" id="team" data-story-anchor="team" data-team-orbit aria-labelledby="team-title">
+      <div class="section-heading"><h2 id="team-title" data-enter><span data-zh>认识这支<span class="orbit-accent">队伍。</span></span><span data-en>Meet <span class="orbit-accent">the team.</span></span></h2></div>
+      <div class="team-layout">
+      <div class="team-visual">
+      <div class="orbit-viewport" tabindex="0" aria-label="团队人物环绕展示，可用左右方向键切换" aria-describedby="orbit-help">
+        <img loading="lazy" class="orbit-brandmark" data-asset="assets/huayu-brand/team-wordmark.svg" width="1700" height="270" alt="" aria-hidden="true">
+        <div class="orbit-floor" aria-hidden="true"></div>
+        <!-- team-figures:start -->
+        <figure class="orbit-person" data-portrait-cutout data-member="2" data-name-zh="刘亮" data-name-en="Liu Liang">
+          <img data-asset="motion/journey/assets/portraits/member-02.png" width="768" height="647" alt="刘亮，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="role"><span data-zh>前国家一队成员</span><span data-en>Former national first-team member</span></li><li data-kind="honor"><span data-zh>全国锦标赛冠军</span><span data-en>National Championships champion</span></li><li data-kind="honor"><span data-zh>2026深圳林丹杯冠军</span><span data-en>2026 Shenzhen Lin Dan Cup champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="0" data-name-zh="刘辉" data-name-en="Liu Hui">
+          <img data-asset="motion/journey/assets/portraits/member-00.png" width="768" height="647" alt="刘辉，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="role"><span data-zh>华羽品牌创始人</span><span data-en>Founder of Huayu</span></li><li data-kind="role"><span data-zh>华羽羽毛球培训创始人</span><span data-en>Founder of Huayu badminton training</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="1" data-name-zh="周萌" data-name-en="Zhou Meng">
+          <img data-asset="motion/journey/assets/portraits/member-01.png" width="768" height="647" alt="周萌，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家健将</span><span data-en>National master athlete</span></li><li data-kind="role"><span data-zh>前国家一队成员</span><span data-en>Former national first-team member</span></li><li data-kind="honor"><span data-zh>全国锦标赛冠军</span><span data-en>National Championships champion</span></li><li data-kind="honor"><span data-zh>世青亚青赛冠军</span><span data-en>World and Asian Junior Championships champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="3" data-name-zh="卢迦彧" data-name-en="Lu Jiayu">
+          <img data-asset="motion/journey/assets/portraits/member-03.png" width="768" height="647" alt="卢迦彧，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家一级运动员</span><span data-en>National first-class athlete</span></li><li data-kind="honor"><span data-zh>全国男单冠军</span><span data-en>National men&#x27;s singles champion</span></li><li data-kind="honor"><span data-zh>湖南省三冠王</span><span data-en>Three-title champion in Hunan Province</span></li><li data-kind="honor"><span data-zh>林丹杯季军</span><span data-en>Lin Dan Cup third-place finisher</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="4" data-name-zh="杨启明" data-name-en="Yang Qiming">
+          <img data-asset="motion/journey/assets/portraits/member-04.png" width="768" height="647" alt="杨启明，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家级运动健将</span><span data-en>National master athlete</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="5" data-name-zh="李亚坤" data-name-en="Li Yakun">
+          <img data-asset="motion/journey/assets/portraits/member-05.png" width="768" height="647" alt="李亚坤，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家一级运动员</span><span data-en>National first-class athlete</span></li><li data-kind="honor"><span data-zh>贵州省运会男子单打冠军</span><span data-en>Guizhou Provincial Games men&#x27;s singles champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="6" data-name-zh="严雅伦" data-name-en="Yan Yalun">
+          <img data-asset="motion/journey/assets/portraits/member-06.png" width="768" height="647" alt="严雅伦，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="role"><span data-zh>中国国青队员</span><span data-en>China national youth team member</span></li><li data-kind="honor"><span data-zh>2016年广东省锦标赛团体冠军</span><span data-en>2016 Guangdong Provincial Championships team champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="7" data-name-zh="张亮" data-name-en="Zhang Liang">
+          <img data-asset="motion/journey/assets/portraits/member-07.png" width="768" height="647" alt="张亮，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家一级运动员</span><span data-en>National first-class athlete</span></li><li data-kind="honor"><span data-zh>黑龙江省锦标赛双打冠军</span><span data-en>Heilongjiang Provincial Championships doubles champion</span></li><li data-kind="honor"><span data-zh>黑龙江省大学生运动会单打冠军</span><span data-en>Heilongjiang University Games singles champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="8" data-name-zh="王天皓" data-name-en="Wang Tianhao">
+          <img data-asset="motion/journey/assets/portraits/member-08.png" width="768" height="647" alt="王天皓，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家一级运动员</span><span data-en>National first-class athlete</span></li><li data-kind="honor"><span data-zh>河北省运会冠军</span><span data-en>Hebei Provincial Games champion</span></li><li data-kind="honor"><span data-zh>河北省锦标赛男单冠军</span><span data-en>Hebei Provincial Championships men&#x27;s singles champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="9" data-name-zh="罗粲" data-name-en="Luo Can">
+          <img data-asset="motion/journey/assets/portraits/member-09.png" width="768" height="647" alt="罗粲，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="honor"><span data-zh>湖南省大学生冠军</span><span data-en>Hunan university champion</span></li><li data-kind="honor"><span data-zh>湖南省运会男双亚军</span><span data-en>Hunan Provincial Games men&#x27;s doubles runner-up</span></li><li data-kind="honor"><span data-zh>邵阳市运会冠军</span><span data-en>Shaoyang City Games champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="10" data-name-zh="张默然" data-name-en="Zhang Moran">
+          <img data-asset="motion/journey/assets/portraits/member-10.png" width="768" height="647" alt="张默然，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="role"><span data-zh>原天津羽毛球队主教练</span><span data-en>Former head coach of the Tianjin badminton team</span></li><li data-kind="role"><span data-zh>中国国家羽毛球少年队教练员</span><span data-en>Coach of the China national junior badminton team</span></li><li data-kind="honor"><span data-zh>2011全国羽毛球锦标赛男双冠军</span><span data-en>2011 National Badminton Championships men&#x27;s doubles champion</span></li><li data-kind="honor"><span data-zh>2012全国羽毛球冠军赛混双亚军、男双第三</span><span data-en>2012 National Badminton Champions Tournament mixed doubles runner-up and third place in men&#x27;s doubles</span></li><li data-kind="honor"><span data-zh>中国羽毛球超级联赛三届冠军</span><span data-en>Three-time China Badminton Super League champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="11" data-name-zh="陈晓筝" data-name-en="Chen Xiaozheng">
+          <img data-asset="motion/journey/assets/portraits/member-11.png" width="768" height="647" alt="陈晓筝，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="role"><span data-zh>华羽培训教务主任</span><span data-en>Huayu training administration director</span></li><li data-kind="honor"><span data-zh>河北省运会冠军</span><span data-en>Hebei Provincial Games champion</span></li><li data-kind="role"><span data-zh>河北省专业队退役队员</span><span data-en>Retired Hebei provincial professional team player</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="12" data-name-zh="李东瑾" data-name-en="Li Dongjin">
+          <img data-asset="motion/journey/assets/portraits/member-12.png" width="768" height="647" alt="李东瑾，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家健将</span><span data-en>National master athlete</span></li><li data-kind="role"><span data-zh>前陕西省队主教练</span><span data-en>Former head coach of the Shaanxi provincial team</span></li><li data-kind="role"><span data-zh>天津羽毛球队运动员</span><span data-en>Tianjin badminton team player</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="13" data-name-zh="蔡晓源" data-name-en="Cai Xiaoyuan">
+          <img data-asset="motion/journey/assets/portraits/member-13.png" width="768" height="647" alt="蔡晓源，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="qualification"><span data-zh>国家一级运动员</span><span data-en>National first-class athlete</span></li><li data-kind="honor"><span data-zh>全国男单冠军</span><span data-en>National men&#x27;s singles champion</span></li><li data-kind="honor"><span data-zh>全国混双冠军</span><span data-en>National mixed doubles champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="14" data-name-zh="覃惠龄" data-name-en="Tan Huiling">
+          <img data-asset="motion/journey/assets/portraits/member-14.png" width="768" height="647" alt="覃惠龄，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="honor"><span data-zh>全国混双冠军</span><span data-en>National mixed doubles champion</span></li><li data-kind="honor"><span data-zh>湖北省女双冠军</span><span data-en>Hubei provincial women&#x27;s doubles champion</span></li></template>
+        </figure>
+        <figure class="orbit-person" data-portrait-cutout data-member="15" data-name-zh="冰吸乐乐" data-name-en="Bingxi Lele">
+          <img data-asset="motion/journey/assets/portraits/member-15.png" width="768" height="647" alt="冰吸乐乐，华羽品牌宣传片原始画面" draggable="false" loading="lazy">
+          <template data-member-credentials><li data-kind="film-note"><span data-zh>影片介绍：2024年巴黎奥运会羽毛球混双观众</span><span data-en>Film introduction: Spectator at the badminton mixed doubles event at the Paris 2024 Olympics</span></li></template>
+        </figure>
+        <!-- team-figures:end -->
+      </div>
+      <!-- team-details:start -->
+      <div class="orbit-controls" hidden>
+        <button class="orbit-arrow" type="button" data-orbit-prev aria-label="上一位"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+        <p id="orbit-help"><span data-zh>左右拖动，认识下一位</span><span data-en>Drag to meet the team</span></p>
+        <button class="orbit-arrow" type="button" data-orbit-next aria-label="下一位"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+      </div>
+      <p class="orbit-position" data-orbit-position aria-hidden="true">1 / 16</p>
+      </div>
+      <div class="orbit-caption team-profile" aria-live="polite" aria-atomic="true">
+        <h3 data-orbit-name>刘辉</h3>
+        <ul class="orbit-credentials" data-orbit-credentials><li data-kind="role"><span data-zh>华羽品牌创始人</span><span data-en>Founder of Huayu</span></li><li data-kind="role"><span data-zh>华羽羽毛球培训创始人</span><span data-en>Founder of Huayu badminton training</span></li></ul>
+        <p class="orbit-credentials-source"><span data-zh>资料摘自《华羽》宣传片</span><span data-en>Credentials as presented in the Huayu film</span></p>
+      </div>
+      </div>
+      <nav class="orbit-members" aria-label="选择团队人物" hidden>
+        <button type="button" data-orbit-select="0" aria-current="true"><span data-zh>刘辉</span><span data-en>Liu Hui</span></button>
+        <button type="button" data-orbit-select="2"><span data-zh>刘亮</span><span data-en>Liu Liang</span></button>
+        <button type="button" data-orbit-select="1"><span data-zh>周萌</span><span data-en>Zhou Meng</span></button>
+        <button type="button" data-orbit-select="3"><span data-zh>卢迦彧</span><span data-en>Lu Jiayu</span></button>
+        <button type="button" data-orbit-select="4"><span data-zh>杨启明</span><span data-en>Yang Qiming</span></button>
+        <button type="button" data-orbit-select="5"><span data-zh>李亚坤</span><span data-en>Li Yakun</span></button>
+        <button type="button" data-orbit-select="6"><span data-zh>严雅伦</span><span data-en>Yan Yalun</span></button>
+        <button type="button" data-orbit-select="7"><span data-zh>张亮</span><span data-en>Zhang Liang</span></button>
+        <button type="button" data-orbit-select="8"><span data-zh>王天皓</span><span data-en>Wang Tianhao</span></button>
+        <button type="button" data-orbit-select="9"><span data-zh>罗粲</span><span data-en>Luo Can</span></button>
+        <button type="button" data-orbit-select="10"><span data-zh>张默然</span><span data-en>Zhang Moran</span></button>
+        <button type="button" data-orbit-select="11"><span data-zh>陈晓筝</span><span data-en>Chen Xiaozheng</span></button>
+        <button type="button" data-orbit-select="12"><span data-zh>李东瑾</span><span data-en>Li Dongjin</span></button>
+        <button type="button" data-orbit-select="13"><span data-zh>蔡晓源</span><span data-en>Cai Xiaoyuan</span></button>
+        <button type="button" data-orbit-select="14"><span data-zh>覃惠龄</span><span data-en>Tan Huiling</span></button>
+        <button type="button" data-orbit-select="15"><span data-zh>冰吸乐乐</span><span data-en>Bingxi Lele</span></button>
+      </nav>
+      <!-- team-details:end -->
+      <noscript><p>请启用 JavaScript 体验旋转。人物与完整资料可在下方官方宣传片中查看。</p></noscript>
+      <a class="text-link team-film-link" href="https://www.bilibili.com/video/BV1uVJF6AEbf/" ><span data-zh>在完整影片中认识团队</span><span data-en>Meet everyone in the full film</span></a>
+    </section>
+</div></div>
+
+    <section class="routes-section" id="routes" aria-labelledby="routes-title">
+      <div class="section-heading"><h2 id="routes-title" data-enter><span data-zh>你的下一场。</span><span data-en>Your next game.</span></h2><p><span data-zh>一支队伍，连接球场上的不同选择。</span><span data-en>One team. Different ways to be part of the game.</span></p></div>
+      <div class="route-layout">
+        <a class="route-equipment" href="#equipment" data-enter><h3><span data-zh>带上装备</span><span data-en>Find your gear</span></h3><p><span data-zh>球拍与球服，从这里了解。</span><span data-en>Explore Huayu rackets and teamwear.</span></p><span class="route-detail"><img data-asset="assets/huayu-brand/zidian-detail-original.png" width="2160" height="3840" loading="lazy" alt="紫电青霜拍框与华羽标识近景" data-alt-zh="紫电青霜拍框与华羽标识近景" data-alt-en="Close-up of the Zidian Qingshuang frame and Huayu mark"></span></a>
+        <div class="route-stack">
+          <a class="route-text" href="#training" data-enter><h3><span data-zh>走进训练</span><span data-en>Get on court</span></h3><p><span data-zh>成人训练，从你的时间和目标出发。</span><span data-en>Adult training starts with your time and goals.</span></p><span class="route-action"><span data-zh>了解训练与咨询方式</span><span data-en>Find training and enquiry options</span></span></a>
+          <a class="route-text route-stars" href="#next-stars" data-enter><h3><span data-zh>成为同行者</span><span data-en>Grow with us</span></h3><p><span data-zh>明日之星，了解教练与行业人才计划。</span><span data-en>Next Stars, a pathway into coaching and the badminton industry.</span></p><span class="route-action"><span data-zh>了解明日之星</span><span data-en>Explore Next Stars</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipment" class="equipment-exhibition" aria-labelledby="equipment-title">
+      <div class="equipment-heading"><h2 id="equipment-title"><span data-zh>华羽装备</span><span data-en>Huayu equipment</span></h2><p><span data-zh>从球拍到球服。先了解产品，再和华羽聊聊适合你的选择。</span><span data-en>From rackets to teamwear. Explore the range, then talk to Huayu about your next choice.</span></p></div>
+      <div class="equipment-host" id="equipment-host" data-motion-surface tabindex="0" role="group">
+        <div class="equipment-fallback" aria-label="装备外观静帧"><img loading="lazy" data-asset="motion/equipment/assets/fallback-tufu.jpg" alt="华羽屠夫外观模型"><img loading="lazy" data-asset="motion/equipment/assets/fallback-zidian.jpg" alt="紫电青霜外观模型"><img loading="lazy" data-asset="motion/equipment/assets/fallback-teamwear.jpg" alt="华羽黑色球服外观模型"></div>
+        <div class="equipment-labels" aria-hidden="true"><span data-equipment-label="tufu"><span data-zh>屠夫</span><span data-en>TUFU</span></span><span data-equipment-label="zidian"><span data-zh>紫电青霜</span><span data-en>ZIDIAN QINGSHUANG</span></span><span data-equipment-label="teamwear"><span data-zh>华羽球服</span><span data-en>TEAMWEAR</span></span></div>
+      </div>
+      <nav class="equipment-choices" aria-label="选择装备">
+        <button type="button" data-equipment-select="tufu" aria-pressed="true"><span data-zh>华羽屠夫</span><span data-en>Huayu Tufu</span></button>
+        <button type="button" data-equipment-select="zidian" aria-pressed="false"><span data-zh>紫电青霜</span><span data-en>Zidian Qingshuang</span></button>
+        <button type="button" data-equipment-select="teamwear" aria-pressed="false"><span data-zh>华羽球服</span><span data-en>Huayu teamwear</span></button>
+      </nav>
+      <div class="equipment-information"><div><p data-equipment-status role="status" aria-live="polite"></p>
+        <article class="product" data-product="tufu" data-source="https://www.bilibili.com/video/BV1T6m2BbEuu/">
+          <h3><span data-zh>华羽屠夫</span><span data-en>Huayu Tufu</span></h3>
+          <p><span data-zh>华羽屠夫以兼顾进攻力量与挥拍速度为设计方向。刘辉在介绍中谈到，通过水标位置和平衡点调校，尝试改善传统进攻拍与挥速拍之间的取舍。黑粉涂装搭配白色握把，形成鲜明的外观识别。</span><span data-en>Huayu Tufu is designed to balance attacking power with swing speed. In his introduction, Liu Hui explains how decal placement and balance-point tuning aim to address the trade-off between power-focused and speed-focused rackets. A black-and-pink finish and white grip give it a distinctive appearance.</span></p>
+          <p><span data-zh>这支球拍保留了一定的上手门槛。影片除了介绍设计思路，还展示了反手、推挑等实际击球，并讨论挥拍与发力感受。可以结合完整演示，了解它与自己技术习惯的契合程度。</span><span data-en>The racket has a learning curve. Alongside the design explanation, the film includes backhand and push-and-lift demonstrations and a discussion of swing and hitting feel. Watch the full demonstration to consider how it may suit your technique.</span></p>
+          <p class="product-credit"><span data-zh>刘辉讲解 · 大G羽毛球直播片段</span><span data-en>Liu Hui speaking · Livestream excerpt by Da G Badminton</span></p>
+          <div class="product-actions"><a href="https://www.bilibili.com/video/BV1T6m2BbEuu/" data-product-open><span data-zh>动态展示</span><span data-en>View animation</span></a><a href="#contact" data-intent="gear"><span data-zh>咨询装备</span><span data-en>Enquire</span></a></div>
+        </article>
+        <article class="product" data-product="zidian" data-source="https://www.douyin.com/video/7651572185740393828" hidden>
+          <h3><span data-zh>紫电青霜</span><span data-en>Zidian Qingshuang</span></h3>
+          <p><span data-zh>紫电青霜以深色拍身配合紫色与金色细节，白色握把形成鲜明对比。拍框采用华羽独立设计与自主开模，设计重点是击球稳定性；拍框、锥盖与中杆的涂装也在影片中逐一展示。</span><span data-en>Zidian Qingshuang pairs a dark body with purple and gold detailing and a contrasting white grip. Huayu describes an independently designed frame made with its own mould, with shot stability as a design priority. The film shows the finish across the frame, cone and shaft.</span></p>
+          <p><span data-zh>据品牌介绍，双结构中杆将弯折点上移，着重于加快回弹；双层内发泡工艺则用于改善击球时的减震表现。想进一步了解这些设计如何体现在使用中，可以观看刘辉的完整讲解。</span><span data-en>According to the brand, the dual-structure shaft moves the bending point upward to promote a quicker rebound, while dual-layer internal foaming is intended to dampen vibration at impact. Watch Liu Hui’s introduction for more on the thinking behind these features.</span></p>
+          <p class="product-credit"><span data-zh>华羽体育运动 ·《紫电青霜正式亮相》</span><span data-en>Huayu Sports · Zidian Qingshuang introduction</span></p>
+          <div class="product-actions"><a href="https://www.douyin.com/video/7651572185740393828" data-product-open><span data-zh>动态展示</span><span data-en>View animation</span></a><a href="#contact" data-intent="gear"><span data-zh>咨询装备</span><span data-en>Enquire</span></a></div>
+        </article>
+        <article class="product" data-product="teamwear" data-source="https://www.bilibili.com/video/BV1687M6iEbj/" hidden>
+          <h3><span data-zh>华羽球服</span><span data-en>Huayu teamwear</span></h3>
+          <p><span data-zh>华羽球服首发提供紫、黑、红、蓝、白五种配色，发布视频由五位成员穿着不同颜色同场展示。短袖搭配撞色领口、肩部线条与袖口，胸前以华羽标识和 Badminton 字样呈现羽毛球主题。</span><span data-en>Huayu’s launch collection offers five colours: purple, black, red, blue and white. Five members wear the different colours together in the launch film. The short-sleeve design features a contrasting neckline, shoulder lines and cuffs, with the Huayu emblem and Badminton lettering on the chest.</span></p>
+          <p><span data-zh>展厅展示的是黑色款正面：深色衣身叠加灰色图案，以白色领边、肩线和袖边勾勒轮廓，袖部带有 HUAYU 标识。可通过首发影片比较五款配色的实穿效果，再向华羽咨询尺码和购买信息。</span><span data-en>The gallery presents the front of the black version: a dark body with grey graphics, outlined by white trim at the neck, shoulders and cuffs, plus HUAYU branding on the sleeve. Compare all five colours in the launch film, then contact Huayu for sizing and purchasing information.</span></p>
+          <p class="product-credit"><span data-zh>刘辉羽毛球 ·《球服首发》</span><span data-en>Liu Hui Badminton · Teamwear launch</span></p>
+          <div class="product-actions"><a href="https://www.bilibili.com/video/BV1687M6iEbj/" data-product-open><span data-zh>动态展示</span><span data-en>View animation</span></a><a href="#contact" data-intent="gear"><span data-zh>咨询装备</span><span data-en>Enquire</span></a></div>
+        </article>
+      </div><p class="equipment-help"><span data-zh><span class="equipment-hover-help">鼠标指向装备时暂停，移开继续旋转。<br></span>横向拖动观察；也可用左右方向键选款。</span><span data-en><span class="equipment-hover-help">Hover over a product to pause. Move away to resume.<br></span>Drag to inspect, or select with the arrow keys.</span></p></div>
+    </section>
+
+    <section class="training-section" id="training" aria-labelledby="training-title">
+      <div class="section-heading"><h2 id="training-title" data-enter><span data-zh>把时间留给<span class="training-emphasis">球场</span>。</span><span data-en>Make time for <span class="training-emphasis">court</span>.</span></h2><p><span data-zh>想练多久，想解决什么？选择你想了解的成人训练，带着具体问题和华羽聊。</span><span data-en>How much time do you have, and what do you want to improve? Choose a format to prepare your enquiry.</span></p></div>
+      <div class="training-layout">
+        <div class="training-options" role="tablist" aria-label="成人训练类型" data-aria-zh="成人训练类型" data-aria-en="Adult training formats" hidden>
+
+<button class="training-tab" id="tab-week" type="button" role="tab" aria-controls="training-panel" aria-selected="true" tabindex="0" data-training="week"><span data-zh>周训</span><span data-en>Zhouxun</span></button>
+<button class="training-tab" id="tab-camp" type="button" role="tab" aria-controls="training-panel" aria-selected="false" tabindex="-1" data-training="camp"><span data-zh>其他训练</span><span data-en>Other options</span></button>
+<button class="training-tab" id="tab-private" type="button" role="tab" aria-controls="training-panel" aria-selected="false" tabindex="-1" data-training="private"><span data-zh>私教</span><span data-en>Private coaching</span></button>
+
+        </div>
+        <div class="training-panel" id="training-panel" role="tabpanel" aria-labelledby="tab-week" tabindex="0">
+          <h3 data-training-title><span data-zh>了解周训安排</span><span data-en>Explore Zhouxun</span></h3>
+          <p data-training-description><span data-zh>向华羽了解周训的具体周期与训练安排。把可到场日期、现有基础和希望改善的技术告诉教务。</span><span data-en>Ask Huayu about the exact schedule and duration. Share your available dates, experience and the skills you want to improve.</span></p>
+          <ul data-training-points><li><span data-zh>可到场的日期与天数</span><span data-en>Your available dates and number of days</span></li><li><span data-zh>目前水平与训练目标</span><span data-en>Your experience and training goals</span></li><li><span data-zh>班期、费用与安排</span><span data-en>Current dates, fees and arrangements</span></li></ul>
+          <a class="button button-light" href="#contact" data-training-cta data-intent="training"><span data-zh>咨询周训</span><span data-en>Ask about Zhouxun</span></a>
+          <p class="training-note"><span data-zh>具体训练形式、班期和费用，以华羽当前答复为准。</span><span data-en>Huayu will confirm current formats, dates and fees.</span></p>
+        </div>
+      </div>
+      <noscript><p>成人训练还可咨询其他训练与私教，请前往下方官方账号联系。</p></noscript>
+    </section>
+
+    <section class="stars-section" id="next-stars" aria-labelledby="stars-title">
+      <div class="stars-intro"><h2 id="stars-title" data-enter><span data-zh>明日之星</span><span data-en>Next Stars</span></h2><p class="statement" data-enter><span data-zh>热爱羽毛球，也想成为<br><span class="stars-emphasis">陪别人走上球场的人。</span></span><span data-en>Love the game.<br><span class="stars-emphasis">Help others find theirs.</span></span></p><p><span data-zh>面向希望长期从事羽毛球教学与行业工作的伙伴。了解训练支持、教学实践和考核安排，找到成为同行者的可能。</span><span data-en>For people interested in a future in badminton coaching and the wider industry. Learn about training support, teaching practice and assessment.</span></p><a class="button button-light" href="#contact" data-intent="stars"><span data-zh>咨询人才计划</span><span data-en>Ask about the programme</span></a></div>
+      <div class="stars-process">
+        <article data-enter><h3><span data-zh>先认识彼此</span><span data-en>Start a conversation</span></h3><p><span data-zh>介绍运动经历与职业意向，咨询当前招募条件。</span><span data-en>Introduce your badminton experience and career interests. Ask about current entry requirements.</span></p></article>
+        <article data-enter><h3><span data-zh>训练与教学</span><span data-en>Train and teach</span></h3><p><span data-zh>了解训练、教学实践与支持安排。具体周期由官方确认。</span><span data-en>Learn about training, teaching practice and support. Huayu will confirm the duration and arrangements.</span></p></article>
+        <article data-enter><h3><span data-zh>考核与发展</span><span data-en>Assessment and growth</span></h3><p><span data-zh>了解考核方式及通过后的签约安排，参与不等于保证录取或签约。</span><span data-en>Ask how assessment works and what signing involves. Participation does not guarantee selection or a contract.</span></p></article>
+      </div>
+    </section>
+
+    <section class="media-section" id="events" aria-labelledby="media-heading">
+<div class="media-track" data-media-track>
+<section id="films" class="media-space" role="group" aria-labelledby="media-heading">
+  <div class="media-space-heading"><h2 id="media-heading"><span data-zh>球场内外。</span><span data-en>Beyond<br>the court.</span></h2><p data-media-note><span data-zh>华羽日常社 · 球场里的我们</span><span data-en>Huayu Daily · Life around the court</span></p></div>
+  <p class="media-space-counter" data-media-count>01 / 06</p>
+  <p class="media-space-help" data-media-help id="media-help"><span data-zh>向下滚动，环绕紫电青霜。点击影像，走近这一刻。</span><span data-en>Scroll around Zidian Qingshuang. Select a film to step closer.</span></p>
+  <div class="media-space-stage" data-media-stage data-motion-surface data-od-id="media-stage"><img class="media-racket-fallback" data-racket-fallback data-poster="motion/equipment/assets/fallback-zidian.jpg" width="900" height="1200" loading="lazy" alt="紫电青霜三维外观静帧" data-alt-zh="紫电青霜三维外观静帧" data-alt-en="Zidian Qingshuang appearance model">
+  <div class="media-static-list"><article class="media-static-card"><a href="https://www.douyin.com/video/7650813617557935086" target="_blank" rel="noopener" data-static-film="dragon-tail"><img loading="lazy" data-poster="motion/media-space/assets/daily/posters/dragon-tail.jpg" width="1440" height="1080" alt="神龙摆尾" data-alt-zh="神龙摆尾" data-alt-en="Dragon-tail return"></a><h3><span data-zh>神龙摆尾</span><span data-en>Dragon-tail return</span></h3><p><span data-zh>华羽日常社 · 抖音原片</span><span data-en>Huayu Daily · Original Douyin film</span></p><div class="media-static-actions"><a href="https://www.douyin.com/video/7650813617557935086" target="_blank" rel="noopener" data-static-film="dragon-tail"><span data-zh>查看原片</span><span data-en>View original</span></a><a href="https://www.douyin.com/video/7650813617557935086" target="_blank" rel="noopener"><span data-zh>原发布页</span><span data-en>Original upload</span></a></div></article><article class="media-static-card"><a href="https://www.douyin.com/video/7660058304374704550" target="_blank" rel="noopener" data-static-film="court-duo"><img loading="lazy" data-poster="motion/media-space/assets/daily/posters/court-duo.jpg" width="2160" height="3840" alt="场上互动" data-alt-zh="场上互动" data-alt-en="On court together"></a><h3><span data-zh>场上互动</span><span data-en>On court together</span></h3><p><span data-zh>华羽日常社 · 抖音原片</span><span data-en>Huayu Daily · Original Douyin film</span></p><div class="media-static-actions"><a href="https://www.douyin.com/video/7660058304374704550" target="_blank" rel="noopener" data-static-film="court-duo"><span data-zh>查看原片</span><span data-en>View original</span></a><a href="https://www.douyin.com/video/7660058304374704550" target="_blank" rel="noopener"><span data-zh>原发布页</span><span data-en>Original upload</span></a></div></article><article class="media-static-card"><a href="https://www.douyin.com/video/7654450085091051657" target="_blank" rel="noopener" data-static-film="net-play"><img loading="lazy" data-poster="motion/media-space/assets/daily/posters/net-play.jpg" width="1920" height="1080" alt="勾球比拼" data-alt-zh="勾球比拼" data-alt-en="At the net"></a><h3><span data-zh>勾球比拼</span><span data-en>At the net</span></h3><p><span data-zh>华羽日常社 · 抖音原片</span><span data-en>Huayu Daily · Original Douyin film</span></p><div class="media-static-actions"><a href="https://www.douyin.com/video/7654450085091051657" target="_blank" rel="noopener" data-static-film="net-play"><span data-zh>查看原片</span><span data-en>View original</span></a><a href="https://www.douyin.com/video/7654450085091051657" target="_blank" rel="noopener"><span data-zh>原发布页</span><span data-en>Original upload</span></a></div></article><article class="media-static-card"><a href="https://www.douyin.com/video/7655767766414885038" target="_blank" rel="noopener" data-static-film="box-challenge"><img loading="lazy" data-poster="motion/media-space/assets/daily/posters/box-challenge.jpg" width="3840" height="2160" alt="抽纸箱挑战" data-alt-zh="抽纸箱挑战" data-alt-en="The cardboard challenge"></a><h3><span data-zh>抽纸箱挑战</span><span data-en>The cardboard challenge</span></h3><p><span data-zh>华羽日常社 · 抖音原片</span><span data-en>Huayu Daily · Original Douyin film</span></p><div class="media-static-actions"><a href="https://www.douyin.com/video/7655767766414885038" target="_blank" rel="noopener" data-static-film="box-challenge"><span data-zh>查看原片</span><span data-en>View original</span></a><a href="https://www.douyin.com/video/7655767766414885038" target="_blank" rel="noopener"><span data-zh>原发布页</span><span data-en>Original upload</span></a></div></article><article class="media-static-card"><a href="https://www.douyin.com/video/7655768400405075913" target="_blank" rel="noopener" data-static-film="duo-daily"><img loading="lazy" data-poster="motion/media-space/assets/daily/posters/duo-daily.jpg" width="2160" height="3840" alt="辉萌组合日常" data-alt-zh="辉萌组合日常" data-alt-en="Between rallies"></a><h3><span data-zh>辉萌组合日常</span><span data-en>Between rallies</span></h3><p><span data-zh>华羽日常社 · 抖音原片</span><span data-en>Huayu Daily · Original Douyin film</span></p><div class="media-static-actions"><a href="https://www.douyin.com/video/7655768400405075913" target="_blank" rel="noopener" data-static-film="duo-daily"><span data-zh>查看原片</span><span data-en>View original</span></a><a href="https://www.douyin.com/video/7655768400405075913" target="_blank" rel="noopener"><span data-zh>原发布页</span><span data-en>Original upload</span></a></div></article><article class="media-static-card"><a href="https://www.douyin.com/video/7702741110754321003" target="_blank" rel="noopener" data-static-film="live-behind"><img loading="lazy" data-poster="motion/media-space/assets/daily/posters/live-behind.jpg" width="2160" height="3840" alt="直播幕后" data-alt-zh="直播幕后" data-alt-en="Behind the broadcast"></a><h3><span data-zh>直播幕后</span><span data-en>Behind the broadcast</span></h3><p><span data-zh>华羽日常社 · 抖音原片</span><span data-en>Huayu Daily · Original Douyin film</span></p><div class="media-static-actions"><a href="https://www.douyin.com/video/7702741110754321003" target="_blank" rel="noopener" data-static-film="live-behind"><span data-zh>查看原片</span><span data-en>View original</span></a><a href="https://www.douyin.com/video/7702741110754321003" target="_blank" rel="noopener"><span data-zh>原发布页</span><span data-en>Original upload</span></a></div></article></div></div>
+  <div class="media-space-footer" data-media-footer data-od-id="media-information">
+  <div class="media-space-information" aria-live="polite" aria-atomic="true"><p data-media-category><span data-zh>训练互动</span><span data-en>On court</span></p><h3 data-media-title><span data-zh>神龙摆尾</span><span data-en>Dragon-tail return</span></h3><p data-media-credit><span data-zh>华羽日常社 · 抖音原片</span><span data-en>Huayu Daily · Original Douyin film</span></p><p data-media-status></p></div>
+  <div class="media-space-actions"><a href="https://www.douyin.com/video/7650813617557935086" target="_blank" rel="noopener" data-media-watch><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1 14 8 3 15Z"/></svg><span data-media-watch-label><span data-zh>查看原片</span><span data-en>View original</span></span></a><a href="https://www.douyin.com/video/7650813617557935086" data-media-source target="_blank" rel="noopener"><span data-zh>原发布页</span><span data-en>Original upload</span></a></div>
+  <nav class="media-space-navigation" aria-label="选择日常影像"><div class="media-space-choices"><button type="button" data-media-select="dragon-tail" aria-pressed="true"><span class="media-choice-number">01</span><span class="media-choice-title"><span data-zh>神龙摆尾</span><span data-en>Dragon-tail return</span></span></button><button type="button" data-media-select="court-duo" aria-pressed="false"><span class="media-choice-number">02</span><span class="media-choice-title"><span data-zh>场上互动</span><span data-en>On court together</span></span></button><button type="button" data-media-select="net-play" aria-pressed="false"><span class="media-choice-number">03</span><span class="media-choice-title"><span data-zh>勾球比拼</span><span data-en>At the net</span></span></button><button type="button" data-media-select="box-challenge" aria-pressed="false"><span class="media-choice-number">04</span><span class="media-choice-title"><span data-zh>抽纸箱挑战</span><span data-en>The cardboard challenge</span></span></button><button type="button" data-media-select="duo-daily" aria-pressed="false"><span class="media-choice-number">05</span><span class="media-choice-title"><span data-zh>辉萌组合日常</span><span data-en>Between rallies</span></span></button><button type="button" data-media-select="live-behind" aria-pressed="false"><span class="media-choice-number">06</span><span class="media-choice-title"><span data-zh>直播幕后</span><span data-en>Behind the broadcast</span></span></button></div><div class="media-space-arrows"><button type="button" data-media-previous aria-label="上一部"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 4-6 6 6 6"/></svg></button><button type="button" data-media-next aria-label="下一部"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 4 6 6-6 6"/></svg></button></div></nav>
+  </div>
+  
+</section>
+</div>
+<div class="film-more"><a href="https://www.douyin.com/user/MS4wLjABAAAAaHybyuk0gV6ZRvMnuBQEJXw39mcPnwvTIHlfQdpGyEFcHF6qx0SpBcVYJ4MX5cJQ" target="_blank" rel="noopener"><span data-zh>在抖音关注华羽日常社</span><span data-en>Explore Huayu Daily on Douyin</span></a><a href="https://www.bilibili.com/video/BV1qVdEBQEQF/"><span data-zh>查看华羽赛事预告</span><span data-en>View the Huayu match announcement</span></a></div>
+</section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading"><h2 id="contact-title" data-enter><span data-zh>下一场，<span class="contact-emphasis">聊聊看</span>。</span><span data-en>Let’s <span class="contact-emphasis">talk</span> badminton.</span></h2><p><span data-zh>告诉华羽你想了解什么。通过刘辉羽毛球官方账号，咨询装备、成人训练或明日之星。</span><span data-en>Tell Huayu what you have in mind. Contact Liu Hui’s official account about equipment, adult training or Next Stars.</span></p></div>
+      <div class="contact-layout">
+        <div class="contact-intents" role="group" aria-label="咨询方向" data-aria-zh="咨询方向" data-aria-en="Enquiry topic" hidden>
+          <button type="button" data-contact-intent="gear" aria-pressed="false"><span data-zh>装备咨询</span><span data-en>Equipment</span></button>
+          <button type="button" data-contact-intent="training" aria-pressed="true"><span data-zh>成人训练</span><span data-en>Adult training</span></button>
+          <button type="button" data-contact-intent="stars" aria-pressed="false"><span data-zh>明日之星</span><span data-en>Next Stars</span></button>
+        </div>
+        <div class="contact-message"><p id="enquiry-text" aria-live="polite"><span data-zh>你好，我想了解华羽成人训练。我的基础是____，可以到场的日期是____，希望提升____。</span><span data-en>Hello, I’d like to ask about adult training. My experience is ____, my available dates are ____, and I’d like to improve ____.</span></p><div class="contact-buttons"><button class="button button-light" type="button" id="copy-enquiry" hidden><span data-zh>复制咨询内容</span><span data-en>Copy enquiry</span></button><a class="button button-primary" href="https://space.bilibili.com/695650470" ><span data-zh>前往官方账号咨询</span><span data-en>Visit official account</span></a></div><p id="copy-status" role="status"></p><p class="public-id"><span data-zh>官方账号简介咨询号：</span><span data-en>Enquiry ID listed on the official profile: </span><strong>LH_zhuli</strong></p><p class="contact-note"><span data-zh>B站 · 刘辉羽毛球。可通过主页查看最新联系信息；发送消息可能需要登录。</span><span data-en>Bilibili · Liu Hui Badminton. Find current contact details on the profile. Messaging may require sign-in.</span></p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#top">华羽 HUAYU</a><div class="footer-meta"><span>© 2026 <span data-zh>华羽</span><span data-en>Huayu</span></span><a class="text-link" href="https://www.bilibili.com/video/BV1uVJF6AEbf/" ><span data-zh>影像：华羽官方影片</span><span data-en>Film: Huayu official releases</span></a><a class="text-link" href="#top" ><span data-zh>回到顶部</span><span data-en>Back to top</span></a></div></footer>
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title">
+    <div class="product-dialog-header"><h2 id="product-dialog-title"></h2><button type="button" class="product-close" data-product-close autofocus><span data-zh>关闭</span><span data-en>Close</span><span aria-hidden="true"> ×</span></button></div>
+    <canvas id="product-player" width="384" height="216" role="img" aria-label="装备动态展示"></canvas>
+    <p class="product-credit" data-film-credit hidden></p>
+    <p class="product-error" data-product-loading role="status" hidden><span data-zh>正在准备动态展示…</span><span data-en>Preparing the animation…</span></p>
+    <button type="button" class="text-link" data-product-retry hidden><span data-zh>重新加载动态展示</span><span data-en>Reload animation</span></button>
+    <p class="product-error" data-product-error role="status" hidden><span data-zh>动态展示暂不可用，请前往原发布页观看。</span><span data-en>This animation is unavailable. Watch it on the original page below.</span></p>
+    <a class="text-link product-source" data-product-source target="_blank" rel="noopener"><span data-zh>前往原发布页观看</span><span data-en>Watch on the original page</span></a>
+  </dialog>
+  </div>
+  <script src="motion/boot-ui.js?v=entry-first-20261112"></script>
+<script src="main.js?v=entry-first-20261112"></script>
+  <script type="module" data-motion-entry src="motion/site.js?v=entry-first-20261112"></script>
+</body>
+</html>

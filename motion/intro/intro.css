@@ -1,0 +1,6 @@
+.intro-brand { position:absolute; z-index:5; top:29svh; left:50%; width:min(700px,62vw); aspect-ratio:850/210; transform:translate(-50%,-50%); pointer-events:none; opacity:1; }
+.intro-brand img { display:block; width:100%; height:auto; }
+.intro-brand::after { content:""; position:absolute; inset:0; opacity:0; background:linear-gradient(105deg,transparent 40%,#e9dcff 49%,#fff 51%,transparent 60%); background-size:250% 100%; mask:var(--brand-mask,none) center/contain no-repeat; }
+.intro-brand[data-intro-brand-active="true"] { opacity:var(--brand-alpha,1); clip-path:inset(0 var(--brand-cut,0%) 0 0); }
+.intro-brand[data-intro-brand-active="true"]::after { opacity:var(--brand-sheen,0); background-position:var(--brand-sweep-x,50%) 50%; }
+@media(max-width:767px),(max-width:900px) and (orientation:portrait) { .intro-brand { width:84vw; } }

@@ -1,0 +1,236 @@
+:root {
+  color-scheme: dark;
+  --black: #0b0b0e;
+  --surface: #15141b;
+  --purple: #58368b;
+  --purple-deep: #2a1d42;
+  --purple-light: #c6aff2;
+  --red: #bd2538;
+  --red-text: #e64b5c;
+  --ink: #f6f3f8;
+  --muted: #c3becb;
+  --gutter: clamp(20px, 4.4vw, 76px);
+  --font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--black); scroll-padding-top: 24px; }
+body { margin: 0; color: var(--ink); background: var(--black); font-family: var(--font); font-size: 18px; line-height: 1.65; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-visible, video:focus-visible { outline: 3px solid var(--purple-light); outline-offset: 5px; }
+img, video, canvas[data-animation], #product-player { display: block; width: 100%; max-width: 100%; }
+figure { margin: 0; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-weight: 600; line-height: 1.18; text-wrap: balance; }
+h2 { margin-bottom: 0; font-size: clamp(36px, 4.6vw, 64px); }
+h3 { margin-bottom: 18px; font-size: 32px; }
+p { margin-bottom: 24px; }
+[hidden] { display: none !important; }
+[data-en] { display: none; }
+html[lang="en"] [data-zh] { display: none; }
+html[lang="en"] [data-en] { display: inline; }
+html[lang="en"] h1, html[lang="en"] h2 { letter-spacing: -.035em; }
+.skip-link { position: fixed; top: -100px; left: 20px; z-index: 100; padding: 12px 20px; background: var(--purple-light); color: var(--black); }
+.skip-link:focus { top: 12px; }
+.site-header { padding: 24px var(--gutter); display: flex; align-items: center; gap: 28px; position: relative; z-index: 5; }
+.wordmark { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; }
+.wordmark strong { font-size: 32px; line-height: 1; }
+.wordmark > span { font-size: 16px; font-weight: 700; color: var(--purple-light); }
+.main-nav { margin-left: auto; display: flex; gap: 32px; align-items: center; }
+.main-nav a { min-height: 44px; display: inline-flex; align-items: center; font-size: 16px; }
+.language-toggle, .menu-toggle { min-width: 44px; min-height: 44px; padding: 8px 12px; background: var(--surface); font-size: 16px; }
+.menu-toggle { display: none; }
+.mobile-nav { position: absolute; top: 82px; right: var(--gutter); left: var(--gutter); padding: 20px; background: var(--purple-deep); }
+.mobile-nav a { display: flex; min-height: 48px; align-items: center; }
+.button { display: inline-flex; align-items: center; justify-content: center; padding: 13px 20px; min-height: 50px; font-size: 16px; font-weight: 600; text-align: center; }
+.button-primary { background: var(--red); color: var(--ink); }
+.button-dark { background: #242129; }
+.button-light { background: var(--purple-light); color: var(--black); }
+.button, .text-link, .language-toggle, .menu-toggle { transition: transform 180ms ease-out, opacity 180ms ease-out; }
+.button:hover, .language-toggle:hover, .menu-toggle:hover { transform: translateY(-2px); }
+.button:active, button:active { transform: translateY(1px); }
+.text-link { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; font-size: 16px; }
+.text-link:hover { opacity: .75; }
+section { padding: 112px var(--gutter); }
+.hero { padding: 32px var(--gutter) 0; }
+.hero h1 { font-size: clamp(52px, 8.5vw, 132px); line-height: 1.12; margin: 0 0 30px; font-weight: 600; }
+.hero-emphasis, .contact-emphasis { color: var(--red-text); }
+#equipment-title, .training-emphasis, .stars-emphasis { color: var(--purple-light); }
+.hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 40px; }
+.hero-lede { margin: 0; font-size: 18px; line-height: 1.6; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.hero-media { overflow: hidden; }
+.hero-media video { height: auto; aspect-ratio: 16/9; object-fit: contain; background: #080807; }
+figcaption { font-size: 16px; line-height: 1.6; }
+.hero-media figcaption { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 0; color: var(--muted); }
+.hero-media .text-link { font-size: 16px; }
+.film-hover-hint { margin-left: auto; }
+@media (hover: none), (pointer: coarse) { .film-hover-hint { display: none; } }
+.section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: end; margin-bottom: 48px; }
+.section-heading > p { max-width: 34em; margin: 0; }
+.team-section > .section-heading { display: block; margin-bottom: 24px; }
+.routes-section { margin-top: 68px; background: var(--purple); }
+.route-layout { display: grid; grid-template-columns: 1.12fr 1fr; gap: 32px; }
+.route-equipment { background: var(--black); display: flex; flex-direction: column; padding: 32px 32px 0; overflow: hidden; }
+.route-equipment h3 { font-size: 32px; }
+.route-equipment p { color: var(--muted); }
+.route-equipment img { height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: center 45%; margin-top: auto; }
+.route-stack { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+.route-text { display: block; padding: 28px; background: var(--purple-deep); }
+.route-stars { background: #5d3a88; }
+.route-text h3 { font-size: 32px; }
+.route-action { font-size: 16px; display: inline-block; margin-top: 8px; }
+.route-equipment img { transition: transform 350ms ease-out; }
+.route-equipment:hover img { transform: scale(1.02); }
+.route-detail { display: block; position: relative; width: 100%; aspect-ratio: 2 / 1; margin-top: auto; overflow: hidden; }
+.route-equipment .route-detail img { position: absolute; width: 100%; height: auto; aspect-ratio: auto; top: -97.222%; margin: 0; }
+.route-text:hover .route-action { text-decoration: underline; text-underline-offset: 6px; }
+.equipment-section { background: var(--black); }
+.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
+.product { min-width: 0; display: flex; flex-direction: column; }
+.product-photo { position: relative; display: block; aspect-ratio: 4 / 5; background: #050506; margin-bottom: 28px; overflow: hidden; }
+.product-photo img { width: 100%; height: 100%; object-fit: contain; transition: transform 250ms ease-out; }
+.product-photo:hover img { transform: scale(1.025); }
+
+.product-racket-crop { position: absolute; height: 91%; aspect-ratio: 350 / 1130; top: 4.5%; left: 50%; transform: translateX(-50%); overflow: hidden; }
+.product-racket-crop img { position: absolute; width: 385.714%; height: auto; max-width: none; left: -121.429%; top: -13.274%; --tufu-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201350%201350%22%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22net%22%3E%3Cpath%20d%3D%22M598%20188%20C541%20183%20495%20215%20471%20264%20C447%20309%20444%20356%20446%20407%20C448%20474%20472%20525%20508%20556%20Q555%20591%20602%20591%20C662%20594%20704%20565%20731%20519%20C756%20474%20760%20433%20754%20384%20C751%20323%20730%20272%20710%20238%20C679%20199%20644%20187%20598%20188%20Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cpath%20fill%3D%22white%22%20fill-rule%3D%22evenodd%22%20d%3D%22M517.30%20200%20L515.30%20202%20L513.30%20204%20L511.30%20206%20L508.30%20208%20L506.30%20210%20L503.30%20212%20L502.30%20214%20L500.30%20216%20L498.30%20218%20L497.30%20220%20L495.30%20222%20L493.30%20224%20L491.30%20226%20L489.30%20228%20L488.30%20230%20L487.30%20232%20L485.30%20234%20L484.30%20236%20L483.30%20238%20L481.30%20240%20L480.30%20242%20L479.30%20244%20L478.30%20246%20L476.30%20248%20L475.30%20250%20L474.30%20252%20L473.30%20254%20L471.30%20256%20L471.30%20258%20L469.30%20260%20L470.30%20262%20L468.30%20264%20L466.30%20266%20L467.30%20268%20L465.30%20270%20L463.30%20272%20L463.30%20274%20L463.30%20276%20L463.30%20278%20L460.30%20280%20L459.30%20282%20L458.30%20284%20L457.30%20286%20L456.30%20288%20L456.30%20290%20L454.30%20292%20L454.30%20294%20L454.30%20296%20L453.30%20298%20L453.30%20300%20L451.30%20302%20L453.30%20304%20L451.30%20306%20L452.30%20308%20L450.30%20310%20L450.30%20312%20L450.30%20314%20L449.30%20316%20L448.30%20318%20L448.30%20320%20L447.30%20322%20L447.30%20324%20L446.30%20326%20L444.30%20328%20L445.30%20330%20L444.30%20332%20L443.30%20334%20L443.30%20336%20L443.30%20338%20L443.30%20340%20L443.30%20342%20L442.30%20344%20L442.30%20346%20L442.30%20348%20L441.30%20350%20L441.30%20352%20L440.30%20354%20L439.30%20356%20L438.30%20358%20L437.30%20360%20L437.30%20362%20L441.30%20364%20L440.30%20366%20L440.30%20368%20L439.30%20370%20L439.30%20372%20L439.30%20374%20L439.30%20376%20L438.30%20378%20L439.30%20380%20L438.30%20382%20L438.30%20384%20L438.30%20386%20L438.30%20388%20L438.30%20390%20L436.30%20392%20L436.30%20394%20L436.30%20396%20L436.30%20398%20L436.30%20400%20L436.30%20402%20L436.30%20404%20L436.30%20406%20L436.30%20408%20L436.30%20410%20L436.30%20412%20L435.30%20414%20L435.30%20416%20L435.30%20418%20L435.30%20420%20L435.30%20422%20L435.30%20424%20L435.30%20426%20L435.30%20428%20L436.30%20430%20L437.30%20432%20L437.30%20434%20L437.30%20436%20L437.30%20438%20L437.30%20440%20L438.30%20442%20L438.30%20444%20L438.30%20446%20L438.30%20448%20L437.30%20450%20L437.30%20452%20L437.30%20454%20L438.30%20456%20L439.30%20458%20L439.30%20460%20L439.30%20462%20L439.30%20464%20L441.30%20466%20L441.30%20468%20L442.30%20470%20L444.30%20472%20L444.30%20474%20L445.30%20476%20L445.30%20478%20L445.30%20480%20L444.30%20482%20L445.30%20484%20L447.30%20486%20L447.30%20488%20L447.30%20490%20L447.30%20492%20L449.30%20494%20L449.30%20496%20L450.30%20498%20L451.30%20500%20L451.30%20502%20L452.30%20504%20L454.30%20506%20L454.30%20508%20L455.30%20510%20L456.30%20512%20L457.30%20514%20L459.30%20516%20L459.30%20518%20L461.30%20520%20L462.30%20522%20L463.30%20524%20L465.30%20526%20L466.30%20528%20L467.30%20530%20L469.30%20532%20L470.30%20534%20L471.30%20536%20L472.30%20538%20L474.30%20540%20L476.30%20542%20L478.30%20544%20L479.30%20546%20L481.30%20548%20L482.30%20550%20L485.30%20552%20L487.30%20554%20L489.30%20556%20L491.30%20558%20L493.30%20560%20L496.30%20562%20L498.30%20564%20L501.30%20566%20L509.30%20568%20L507.30%20570%20L510.30%20572%20L513.30%20574%20L515.30%20576%20L517.30%20578%20L519.30%20580%20L522.30%20582%20L525.30%20584%20L531.30%20586%20L536.30%20588%20L542.30%20590%20L546.30%20592%20L548.30%20594%20L549.30%20596%20L552.30%20598%20L557.30%20600%20L571.30%20602%20L572.30%20604%20L584.30%20606%20L624.70%20606%20L627.70%20604%20L640.99%20602%20L648.70%20600%20L654.70%20598%20L656.70%20596%20L658.70%20594%20L659.70%20592%20L668.20%20590%20L672.10%20588%20L675.70%20586%20L679.70%20584%20L683.70%20582%20L687.70%20580%20L689.70%20578%20L691.70%20576%20L690.70%20574%20L690.70%20572%20L694.70%20570%20L700.70%20568%20L705.70%20566%20L707.70%20564%20L709.70%20562%20L712.70%20560%20L714.70%20558%20L716.70%20556%20L717.70%20554%20L720.70%20552%20L720.70%20550%20L721.70%20548%20L720.70%20546%20L724.70%20544%20L726.70%20542%20L728.70%20540%20L729.70%20538%20L732.70%20536%20L736.70%20534%20L737.70%20532%20L738.70%20530%20L739.70%20528%20L741.70%20526%20L742.70%20524%20L743.70%20522%20L744.70%20520%20L746.70%20518%20L747.70%20516%20L748.70%20514%20L749.70%20512%20L750.70%20510%20L751.70%20508%20L752.70%20506%20L752.70%20504%20L754.70%20502%20L754.70%20500%20L755.70%20498%20L756.70%20496%20L756.70%20494%20L757.70%20492%20L758.70%20490%20L759.70%20488%20L759.70%20486%20L761.70%20484%20L760.70%20482%20L761.70%20480%20L762.70%20478%20L762.70%20476%20L763.70%20474%20L764.70%20472%20L764.70%20470%20L763.70%20468%20L764.70%20466%20L762.70%20464%20L763.70%20462%20L763.70%20460%20L764.70%20458%20L764.70%20456%20L764.70%20454%20L765.70%20452%20L767.70%20450%20L766.70%20448%20L769.70%20446%20L769.70%20444%20L769.70%20442%20L769.70%20440%20L769.70%20438%20L768.70%20436%20L769.70%20434%20L768.70%20432%20L768.70%20430%20L768.70%20428%20L768.70%20426%20L768.70%20424%20L768.70%20422%20L768.70%20420%20L768.70%20418%20L769.70%20416%20L769.70%20414%20L769.70%20412%20L769.70%20410%20L769.70%20408%20L769.70%20406%20L769.70%20404%20L769.70%20402%20L769.70%20400%20L769.70%20398%20L768.70%20396%20L768.70%20394%20L768.70%20392%20L768.70%20390%20L768.70%20388%20L768.70%20386%20L768.70%20384%20L768.70%20382%20L768.70%20380%20L768.70%20378%20L767.70%20376%20L767.70%20374%20L767.70%20372%20L767.70%20370%20L767.70%20368%20L766.70%20366%20L767.70%20364%20L766.70%20362%20L766.70%20360%20L765.70%20358%20L765.70%20356%20L765.70%20354%20L765.70%20352%20L764.70%20350%20L764.70%20348%20L763.70%20346%20L763.70%20344%20L763.70%20342%20L762.70%20340%20L762.70%20338%20L761.70%20336%20L760.70%20334%20L760.70%20332%20L760.70%20330%20L759.70%20328%20L759.70%20326%20L758.70%20324%20L758.70%20322%20L757.70%20320%20L757.70%20318%20L757.70%20316%20L756.70%20314%20L756.70%20312%20L755.70%20310%20L754.70%20308%20L753.70%20306%20L753.70%20304%20L752.70%20302%20L751.70%20300%20L751.70%20298%20L750.70%20296%20L749.70%20294%20L749.70%20292%20L748.70%20290%20L747.70%20288%20L746.70%20286%20L746.70%20284%20L745.70%20282%20L744.70%20280%20L743.70%20278%20L742.70%20276%20L741.70%20274%20L740.70%20272%20L739.70%20270%20L738.70%20268%20L737.70%20266%20L736.70%20264%20L735.70%20262%20L734.70%20260%20L732.70%20258%20L731.70%20256%20L730.70%20254%20L729.70%20252%20L728.70%20250%20L727.70%20248%20L725.70%20246%20L724.70%20244%20L723.70%20242%20L722.70%20240%20L721.70%20238%20L720.70%20236%20L718.70%20234%20L716.70%20232%20L714.70%20230%20L712.70%20228%20L711.70%20226%20L709.70%20224%20L707.70%20222%20L705.70%20220%20L704.70%20218%20L703.70%20216%20L700.70%20214%20L698.70%20212%20L696.70%20210%20L694.70%20208%20L693.70%20206%20L689.70%20204%20L687.70%20202%20L684.70%20200%20C670%20188%20646%20178%20606%20177%20C574%20176%20543%20183%20517.30%20200%20Z%20M598%20188%20C541%20183%20495%20215%20471%20264%20C447%20309%20444%20356%20446%20407%20C448%20474%20472%20525%20508%20556%20Q555%20591%20602%20591%20C662%20594%20704%20565%20731%20519%20C756%20474%20760%20433%20754%20384%20C751%20323%20730%20272%20710%20238%20C679%20199%20644%20187%20598%20188%20Z%22%2F%3E%0A%3Cpath%20fill%3D%22white%22%20d%3D%22M595%20600%20Q598%20612%20597%20633%20L599%20706%20L598%20798%20L598%20870%20L596%20939%20L592%20960%20L586%201003%20L620%201003%20L613%20967%20L610%20940%20L610%20861%20L608%20798%20L609%20701%20L609%20634%20Q610%20613%20613%20603%20Z%20M616.70%201000%20L588.70%201001%20L588.70%201002%20L588.70%201003%20L587.70%201004%20L587.70%201005%20L587.70%201006%20L587.70%201007%20L587.70%201008%20L586.70%201009%20L586.70%201010%20L586.70%201011%20L585.70%201012%20L585.70%201013%20L585.70%201014%20L585.70%201015%20L585.70%201016%20L585.70%201017%20L585.70%201018%20L584.70%201019%20L584.70%201020%20L583.70%201021%20L583.70%201022%20L583.70%201023%20L583.70%201024%20L583.70%201025%20L583.70%201026%20L583.70%201027%20L583.70%201028%20L583.70%201029%20L582.70%201030%20L582.70%201031%20L582.70%201032%20L581.70%201033%20L581.70%201034%20L581.70%201035%20L581.70%201036%20L581.70%201037%20L581.70%201038%20L581.70%201039%20L581.70%201040%20L582.70%201041%20L582.70%201042%20L582.70%201043%20L582.70%201044%20L582.70%201045%20L582.70%201046%20L582.70%201047%20L582.70%201048%20L581.70%201049%20L582.70%201050%20L582.70%201051%20L582.70%201052%20L581.70%201053%20L582.70%201054%20L582.70%201055%20L582.70%201056%20L582.70%201057%20L581.70%201058%20L581.70%201059%20L581.70%201060%20L582.70%201061%20L582.70%201062%20L582.70%201063%20L582.70%201064%20L582.70%201065%20L582.70%201066%20L582.70%201067%20L582.70%201068%20L581.70%201069%20L581.70%201070%20L581.70%201071%20L581.70%201072%20L582.70%201073%20L582.70%201074%20L581.70%201075%20L581.70%201076%20L581.70%201077%20L582.70%201078%20L581.70%201079%20L582.70%201080%20L582.70%201081%20L581.70%201082%20L581.70%201083%20L581.70%201084%20L582.70%201085%20L582.70%201086%20L582.70%201087%20L582.70%201088%20L582.70%201089%20L582.70%201090%20L582.70%201091%20L582.70%201092%20L582.70%201093%20L581.70%201094%20L581.70%201095%20L582.70%201096%20L582.70%201097%20L582.70%201098%20L582.70%201099%20L582.70%201100%20L582.70%201101%20L582.70%201102%20L582.70%201103%20L582.70%201104%20L582.70%201105%20L582.70%201106%20L582.70%201107%20L582.70%201108%20L582.70%201109%20L582.70%201110%20L582.70%201111%20L582.70%201112%20L582.70%201113%20L581.70%201114%20L581.70%201115%20L581.70%201116%20L581.70%201117%20L582.70%201118%20L582.70%201119%20L582.70%201120%20L582.70%201121%20L582.70%201122%20L582.70%201123%20L582.70%201124%20L582.70%201125%20L582.70%201126%20L582.70%201127%20L582.70%201128%20L582.70%201129%20L582.70%201130%20L582.70%201131%20L582.70%201132%20L582.70%201133%20L582.70%201134%20L582.70%201135%20L582.70%201136%20L582.70%201137%20L582.70%201138%20L582.70%201139%20L582.70%201140%20L582.70%201141%20L582.70%201142%20L582.70%201143%20L582.70%201144%20L582.70%201145%20L582.70%201146%20L582.70%201147%20L582.70%201148%20L582.70%201149%20L582.70%201150%20L582.70%201151%20L582.70%201152%20L582.70%201153%20L582.70%201154%20L582.70%201155%20L582.70%201156%20L582.70%201157%20L582.70%201158%20L582.70%201159%20L582.70%201160%20L582.70%201161%20L582.70%201162%20L581.70%201163%20L582.70%201164%20L582.70%201165%20L581.70%201166%20L581.70%201167%20L581.70%201168%20L581.70%201169%20L581.70%201170%20L581.70%201171%20L582.70%201172%20L582.70%201173%20L582.70%201174%20L582.70%201175%20L582.70%201176%20L582.70%201177%20L582.70%201178%20L582.70%201179%20L582.70%201180%20L582.70%201181%20L582.70%201182%20L582.70%201183%20L582.70%201184%20L582.70%201185%20L582.70%201186%20L582.70%201187%20L582.70%201188%20L582.70%201189%20L582.70%201190%20L582.70%201191%20L582.70%201192%20L582.70%201193%20L582.70%201194%20L582.70%201195%20L582.70%201196%20L581.70%201197%20L581.70%201198%20L581.70%201199%20L581.70%201200%20L582.70%201201%20L581.70%201202%20L581.70%201203%20L581.70%201204%20L582.70%201205%20L582.70%201206%20L582.70%201207%20L582.70%201208%20L582.70%201209%20L582.70%201210%20L582.70%201211%20L582.70%201212%20L582.70%201213%20L582.70%201214%20L582.70%201215%20L582.70%201216%20L582.70%201217%20L582.70%201218%20L582.70%201219%20L582.70%201220%20L582.70%201221%20L582.70%201222%20L582.70%201223%20L581.70%201224%20L581.70%201225%20L581.70%201226%20L581.70%201227%20L581.70%201228%20L581.70%201229%20L581.70%201230%20L581.70%201231%20L581.70%201232%20L581.70%201233%20L581.70%201234%20L580.70%201235%20L580.70%201236%20L580.70%201237%20L579.70%201238%20L579.70%201239%20L579.70%201240%20L579.70%201241%20L578.70%201242%20L578.70%201243%20L578.70%201244%20L577.70%201245%20L577.70%201246%20L577.70%201247%20L577.70%201248%20L576.70%201249%20L576.70%201250%20L576.70%201251%20L576.70%201252%20L576.70%201253%20L576.70%201254%20L576.70%201255%20L577.70%201256%20L577.70%201257%20L576.70%201258%20L576.70%201259%20L577.70%201260%20L577.70%201261%20L577.70%201262%20L578.70%201263%20L579.70%201264%20L580.70%201265%20L582.70%201266%20L583.70%201267%20L585.70%201268%20L589.70%201269%20L595.70%201270%20L601.70%201271%20L608.30%201271%20L618.30%201270%20L621.30%201269%20L624.30%201268%20L626.30%201267%20L627.30%201266%20L627.30%201265%20L628.30%201264%20L629.30%201263%20L630.30%201262%20L631.30%201261%20L631.30%201260%20L632.30%201259%20L632.30%201258%20L633.30%201257%20L633.30%201256%20L633.30%201255%20L633.30%201254%20L632.30%201253%20L632.30%201252%20L632.30%201251%20L632.30%201250%20L632.30%201249%20L631.30%201248%20L631.30%201247%20L630.30%201246%20L630.30%201245%20L630.30%201244%20L629.30%201243%20L629.30%201242%20L628.30%201241%20L628.30%201240%20L628.30%201239%20L627.30%201238%20L627.30%201237%20L626.30%201236%20L625.30%201235%20L625.30%201234%20L625.30%201233%20L625.30%201232%20L625.30%201231%20L625.30%201230%20L624.30%201229%20L624.30%201228%20L624.30%201227%20L624.30%201226%20L624.30%201225%20L624.30%201224%20L624.30%201223%20L624.30%201222%20L625.30%201221%20L625.30%201220%20L624.30%201219%20L624.30%201218%20L624.30%201217%20L624.30%201216%20L625.30%201215%20L625.30%201214%20L625.30%201213%20L625.30%201212%20L625.30%201211%20L625.30%201210%20L625.30%201209%20L625.30%201208%20L624.30%201207%20L624.30%201206%20L624.30%201205%20L625.30%201204%20L625.30%201203%20L625.30%201202%20L625.30%201201%20L625.30%201200%20L624.30%201199%20L624.30%201198%20L624.30%201197%20L625.30%201196%20L625.30%201195%20L625.30%201194%20L625.30%201193%20L624.30%201192%20L624.30%201191%20L624.30%201190%20L625.30%201189%20L625.30%201188%20L625.30%201187%20L625.30%201186%20L625.30%201185%20L625.30%201184%20L625.30%201183%20L625.30%201182%20L625.30%201181%20L625.30%201180%20L624.30%201179%20L624.30%201178%20L624.30%201177%20L624.30%201176%20L624.30%201175%20L624.30%201174%20L624.30%201173%20L624.30%201172%20L624.30%201171%20L624.30%201170%20L624.30%201169%20L624.30%201168%20L624.30%201167%20L624.30%201166%20L624.30%201165%20L625.30%201164%20L625.30%201163%20L625.30%201162%20L625.30%201161%20L625.30%201160%20L624.30%201159%20L624.30%201158%20L624.30%201157%20L625.30%201156%20L625.30%201155%20L625.30%201154%20L625.30%201153%20L625.30%201152%20L625.30%201151%20L625.30%201150%20L625.30%201149%20L625.30%201148%20L625.30%201147%20L625.30%201146%20L625.30%201145%20L625.30%201144%20L625.30%201143%20L625.30%201142%20L625.30%201141%20L625.30%201140%20L625.30%201139%20L625.30%201138%20L625.30%201137%20L625.30%201136%20L624.30%201135%20L624.30%201134%20L624.30%201133%20L624.30%201132%20L624.30%201131%20L624.30%201130%20L624.30%201129%20L624.30%201128%20L624.30%201127%20L624.30%201126%20L624.30%201125%20L624.30%201124%20L624.30%201123%20L624.30%201122%20L624.30%201121%20L624.30%201120%20L624.30%201119%20L624.30%201118%20L624.30%201117%20L624.30%201116%20L624.30%201115%20L624.30%201114%20L624.30%201113%20L625.30%201112%20L624.30%201111%20L624.30%201110%20L624.30%201109%20L624.30%201108%20L624.30%201107%20L624.30%201106%20L624.30%201105%20L624.30%201104%20L624.30%201103%20L624.30%201102%20L624.30%201101%20L624.30%201100%20L624.30%201099%20L624.30%201098%20L624.30%201097%20L624.30%201096%20L624.30%201095%20L624.30%201094%20L624.30%201093%20L624.30%201092%20L624.30%201091%20L624.30%201090%20L624.30%201089%20L624.30%201088%20L624.30%201087%20L624.30%201086%20L625.30%201085%20L625.30%201084%20L625.30%201083%20L625.30%201082%20L625.30%201081%20L625.30%201080%20L625.30%201079%20L625.30%201078%20L625.30%201077%20L625.30%201076%20L625.30%201075%20L625.30%201074%20L625.30%201073%20L625.30%201072%20L625.30%201071%20L624.30%201070%20L624.30%201069%20L624.30%201068%20L624.30%201067%20L624.30%201066%20L624.30%201065%20L624.30%201064%20L624.30%201063%20L624.30%201062%20L624.30%201061%20L624.30%201060%20L625.30%201059%20L624.30%201058%20L624.30%201057%20L624.30%201056%20L624.30%201055%20L625.30%201054%20L625.30%201053%20L625.30%201052%20L625.30%201051%20L625.30%201050%20L625.30%201049%20L625.30%201048%20L625.30%201047%20L624.30%201046%20L624.30%201045%20L625.30%201044%20L625.30%201043%20L625.30%201042%20L625.30%201041%20L625.30%201040%20L624.30%201039%20L625.30%201038%20L625.30%201037%20L625.30%201036%20L624.30%201035%20L625.30%201034%20L625.30%201033%20L625.30%201032%20L624.30%201031%20L624.30%201030%20L624.30%201029%20L624.30%201028%20L624.30%201027%20L624.30%201026%20L624.30%201025%20L623.30%201024%20L623.30%201023%20L623.30%201022%20L623.30%201021%20L622.30%201020%20L622.30%201019%20L621.30%201018%20L621.30%201017%20L621.30%201016%20L621.30%201015%20L620.30%201014%20L620.30%201013%20L620.30%201012%20L620.30%201011%20L620.30%201010%20L619.30%201009%20L619.30%201008%20L619.30%201007%20L619.30%201006%20L619.30%201005%20L619.30%201004%20L619.30%201003%20L619.30%201002%20L618.30%201001%20L618.30%201000%20Z%22%2F%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222.2%22%20clip-path%3D%22url%28%23net%29%22%3E%0A%3Cpath%20d%3D%22M464.204%20185%20L460.395%20597%22%2F%3E%0A%3Cpath%20d%3D%22M476.812%20185%20L474.715%20597%22%2F%3E%0A%3Cpath%20d%3D%22M491.678%20185%20L483.957%20597%22%2F%3E%0A%3Cpath%20d%3D%22M503.598%20185%20L497.023%20597%22%2F%3E%0A%3Cpath%20d%3D%22M516.298%20185%20L510.867%20597%22%2F%3E%0A%3Cpath%20d%3D%22M527.738%20185%20L526.633%20597%22%2F%3E%0A%3Cpath%20d%3D%22M540.180%20185%20L540.003%20597%22%2F%3E%0A%3Cpath%20d%3D%22M556.412%20185%20L554.870%20597%22%2F%3E%0A%3Cpath%20d%3D%22M569.000%20185%20L569.000%20597%22%2F%3E%0A%3Cpath%20d%3D%22M582.948%20185%20L583.001%20597%22%2F%3E%0A%3Cpath%20d%3D%22M596.270%20185%20L596.698%20597%22%2F%3E%0A%3Cpath%20d%3D%22M610.257%20185%20L611.225%20597%22%2F%3E%0A%3Cpath%20d%3D%22M624.765%20185%20L625.910%20597%22%2F%3E%0A%3Cpath%20d%3D%22M637.335%20185%20L640.295%20597%22%2F%3E%0A%3Cpath%20d%3D%22M651.789%20185%20L653.172%20597%22%2F%3E%0A%3Cpath%20d%3D%22M664.471%20185%20L669.807%20597%22%2F%3E%0A%3Cpath%20d%3D%22M677.412%20185%20L682.823%20597%22%2F%3E%0A%3Cpath%20d%3D%22M690.726%20185%20L697.381%20597%22%2F%3E%0A%3Cpath%20d%3D%22M704.492%20185%20L710.351%20597%22%2F%3E%0A%3Cpath%20d%3D%22M715.452%20185%20L724.367%20597%22%2F%3E%0A%3Cpath%20d%3D%22M727.892%20185%20L735.162%20597%22%2F%3E%0A%3Cpath%20d%3D%22M738.353%20185%20L750.448%20597%22%2F%3E%0A%3Cpath%20d%3D%22M437%20215.745%20L771%20213.932%22%2F%3E%0A%3Cpath%20d%3D%22M437%20231.006%20L771%20229.265%22%2F%3E%0A%3Cpath%20d%3D%22M437%20244.911%20L771%20245.126%22%2F%3E%0A%3Cpath%20d%3D%22M437%20261.137%20L771%20260.176%22%2F%3E%0A%3Cpath%20d%3D%22M437%20276.562%20L771%20277.136%22%2F%3E%0A%3Cpath%20d%3D%22M437%20292.890%20L771%20291.741%22%2F%3E%0A%3Cpath%20d%3D%22M437%20308.731%20L771%20305.969%22%2F%3E%0A%3Cpath%20d%3D%22M437%20323.772%20L771%20323.090%22%2F%3E%0A%3Cpath%20d%3D%22M437%20337.153%20L771%20339.922%22%2F%3E%0A%3Cpath%20d%3D%22M437%20354.445%20L771%20355.228%22%2F%3E%0A%3Cpath%20d%3D%22M437%20369.815%20L771%20370.027%22%2F%3E%0A%3Cpath%20d%3D%22M437%20384.602%20L771%20386.035%22%2F%3E%0A%3Cpath%20d%3D%22M437%20402.000%20L771%20402.000%22%2F%3E%0A%3Cpath%20d%3D%22M437%20415.968%20L771%20417.340%22%2F%3E%0A%3Cpath%20d%3D%22M437%20432.000%20L771%20432.000%22%2F%3E%0A%3Cpath%20d%3D%22M437%20447.933%20L771%20447.971%22%2F%3E%0A%3Cpath%20d%3D%22M437%20462.410%20L771%20464.633%22%2F%3E%0A%3Cpath%20d%3D%22M437%20479.811%20L771%20480.000%22%2F%3E%0A%3Cpath%20d%3D%22M437%20494.628%20L771%20495.758%22%2F%3E%0A%3Cpath%20d%3D%22M437%20512.000%20L771%20512.000%22%2F%3E%0A%3Cpath%20d%3D%22M437%20528.906%20L771%20527.951%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E"); -webkit-mask-image: var(--tufu-mask); mask-image: var(--tufu-mask); mask-size: 100% 100%; -webkit-mask-size: 100% 100%; }
+.product-photo:hover .product-racket-crop img { transform: none; }
+.product-teamwear-crop { position: absolute; width: 100%; aspect-ratio: 1080 / 560; top: 50%; transform: translateY(-50%); overflow: hidden; }
+.product-teamwear-crop img { position: absolute; width: 100%; height: auto; top: -113.393%; }
+.product-photo:hover .product-teamwear-crop img { transform: none; }
+.product-play { position: absolute; right: 16px; bottom: 16px; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; color: var(--black); background: var(--purple-light); font-size: 18px; }
+.product h3 { margin-bottom: 16px; }
+.product > p { color: var(--muted); font-size: 16px; margin-bottom: 20px; }
+.product-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: auto; }
+.product-actions a { display: inline-flex; align-items: center; min-height: 44px; color: var(--purple-light); font-size: 16px; }
+.has-open-dialog { overflow: hidden; }
+.product-dialog { width: min(1000px, calc(100% - 48px)); max-height: calc(100dvh - 48px); padding: 24px; border: 0; background: var(--surface); color: var(--ink); overflow: auto; }
+.product-dialog::backdrop { background: #050507ed; }
+.product-dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 20px; }
+.product-dialog h2 { font-size: 32px; }
+.product-close { min-height: 48px; min-width: 80px; padding: 10px 16px; background: var(--purple-deep); font-size: 16px; flex-shrink: 0; }
+.product-dialog #product-player { width: 100%; height: min(62dvh, 600px); object-fit: contain; background: #050506; }
+.product .product-credit { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+.product-source { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; color: var(--purple-light); font-size: 16px; }
+.product-error { font-size: 16px; color: var(--purple-light); margin: 16px 0 0; }
+.training-section { background: var(--purple-deep); }
+.training-layout { display: grid; grid-template-columns: .48fr 1fr; gap: 40px; align-items: stretch; }
+.training-options { display: flex; flex-direction: column; gap: 8px; }
+.training-tab { padding: 22px 24px; min-height: 70px; font-size: 18px; text-align: left; background: #3c295a; transition: transform 180ms ease-out; }
+.training-tab[aria-selected="true"] { color: var(--black); background: var(--purple-light); }
+.training-tab:hover { transform: translateX(4px); }
+.training-panel { padding: 38px; background: var(--black); }
+.training-panel h3 { font-size: 32px; color: var(--purple-light); }
+.training-panel ul { padding-left: 24px; margin: 24px 0 28px; }
+.training-panel li { margin: 8px 0; }
+.training-note { font-size: 16px; color: var(--muted); margin: 24px 0 0; }
+.stars-section { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; background: var(--purple); }
+.stars-intro h2 { margin: 0 0 32px; }
+.statement { font-size: 32px; line-height: 1.45; font-weight: 500; margin-bottom: 30px; }
+.stars-intro > p:not(.statement) { max-width: 30em; }
+.stars-process { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+.stars-process article { padding: 12px 0 12px 24px; }
+.stars-process article p { margin: 0; }
+.team-film-link { margin-top: 20px; color: var(--purple-light); }
+.events-section { background: var(--surface); }
+.stories { display: grid; grid-template-columns: 1.15fr .85fr; gap: 8%; }
+.lead-story img { aspect-ratio: 16/9; height: auto; object-fit: cover; }
+.story-caption { padding-top: 24px; }
+.story-caption h3 { margin-bottom: 8px; }
+.story-caption p { margin: 0; color: var(--muted); }
+.story-list { display: flex; flex-direction: column; justify-content: space-between; gap: 80px; }
+.story-list article { padding-top: 8px; }
+.story-list p { margin-bottom: 12px; }
+.story-list .text-link { color: var(--purple-light); }
+.contact-layout { display: grid; grid-template-columns: .55fr 1fr; gap: 8%; }
+.contact-intents { display: flex; flex-direction: column; align-items: start; gap: 12px; }
+.contact-intents button { padding: 14px 20px; min-height: 52px; font-size: 18px; background: var(--surface); }
+.contact-intents [aria-pressed="true"] { background: var(--purple-light); color: var(--black); }
+.contact-intents [aria-pressed="false"], .public-id strong { color: var(--purple-light); }
+#enquiry-text { background: var(--purple-deep); padding: 26px; min-height: 140px; margin-bottom: 24px; }
+.contact-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+.contact-note { margin: 18px 0 0; color: var(--muted); font-size: 16px; }
+#copy-status { min-height: 28px; margin: 12px 0 0; color: var(--purple-light); font-size: 16px; }
+.site-footer { padding: 42px var(--gutter); background: var(--purple-deep); }
+.footer-brand { font-size: clamp(36px, 4.6vw, 64px); font-weight: 600; display: inline-block; line-height: 1.2; }
+.footer-meta { display: flex; flex-wrap: wrap; gap: 12px 36px; align-items: center; margin-top: 22px; font-size: 16px; color: var(--muted); }
+.footer-meta a:last-child { margin-left: auto; }
+@media (min-width: 1700px) { main, .site-header, .site-footer { max-width: 1800px; margin-left: auto; margin-right: auto; } }
+@media (max-width: 1000px) {
+  .main-nav { gap: 20px; }
+  .hero-bottom { align-items: start; flex-direction: column; gap: 22px; }
+  .section-heading { gap: 6%; }
+  .route-layout { gap: 20px; }
+  .route-equipment, .route-text { padding: 24px; }
+  .route-equipment { padding-bottom: 0; }
+  .route-equipment h3, .route-text h3 { font-size: 32px; }
+  .stars-section, .stories { gap: 6%; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 24px; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 24px; }
+  .site-header { gap: 8px; padding-top: 16px; padding-bottom: 16px; }
+  .wordmark { gap: 10px; }
+  .wordmark strong { font-size: 24px; }
+  .wordmark > span { font-size: 16px; }
+  .main-nav { display: none; }
+  .language-toggle { margin-left: auto; }
+  .menu-toggle { display: block; }
+  section { padding-top: 72px; padding-bottom: 72px; }
+  .hero { padding-top: 20px; padding-bottom: 0; }
+  .hero h1 { font-size: 52px; margin-bottom: 20px; max-width: 8em; }
+  .hero-lede { font-size: 16px; }
+  .hero-bottom { gap: 20px; margin-bottom: 26px; }
+  .hero-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; width: 100%; }
+  .hero-actions .button { font-size: 16px; padding: 12px 8px; }
+  .hero-media figcaption { gap: 8px; font-size: 16px; padding: 8px 0; }
+  .hero-media .text-link { font-size: 16px; }
+  .film-hover-hint { display: none; }
+  .section-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 32px; }
+  .routes-section { margin-top: 42px; }
+  .route-layout, .stars-section, .stories, .contact-layout { grid-template-columns: 1fr; gap: 28px; }
+  .route-equipment img { margin-top: 10px; }
+  .route-equipment h3, .route-text h3 { font-size: 24px; }
+  .route-stack { gap: 16px; }
+  .route-text p { margin-bottom: 12px; }
+  .product-grid { grid-template-columns: 1fr; gap: 44px; }
+  .product-photo { margin-bottom: 20px; }
+  .product-dialog { width: calc(100% - 24px); padding: 16px; max-height: calc(100dvh - 24px); }
+  .product-dialog h2 { font-size: 24px; }
+  .product-dialog-header { gap: 12px; margin-bottom: 16px; }
+  .product-dialog #product-player { height: 55dvh; }
+  .training-layout { grid-template-columns: 1fr; gap: 16px; }
+  .training-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .training-tab { font-size: 16px; min-height: 58px; padding: 16px; }
+  .training-tab:hover { transform: translateY(-2px); }
+  .training-panel { padding: 24px; }
+  .training-panel h3 { font-size: 24px; }
+  .training-note { font-size: 16px; }
+  .stars-section { gap: 44px; }
+  .stars-intro h2 { margin-bottom: 24px; }
+  .statement { font-size: 24px; }
+  .stars-process { gap: 28px; }
+  .stars-process article { padding: 0; }
+  .story-list { margin-top: 12px; gap: 32px; }
+  .story-caption h3 { font-size: 24px; }
+  .contact-intents { flex-direction: row; flex-wrap: wrap; gap: 8px; }
+  .contact-intents button { font-size: 16px; padding: 12px 16px; }
+  #enquiry-text { padding: 22px; }
+  .contact-buttons { flex-direction: column; }
+  .footer-meta { gap: 8px 16px; }
+  .footer-meta a:last-child { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+.public-id { font-size: 16px; margin: 18px 0 0; }
+.is-arriving { animation: arrive-text 520ms cubic-bezier(.2,.7,.2,1); }
+.is-arriving-media { animation: arrive-media 750ms cubic-bezier(.2,.7,.2,1); }
+@keyframes arrive-text { from { opacity: .4; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes arrive-media { from { opacity: .4; transform: scale(.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .is-arriving, .is-arriving-media { animation: none; } }

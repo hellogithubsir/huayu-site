@@ -1,0 +1,29 @@
+[data-journey-team] { position:relative; }
+[data-journey-team] .orbit-viewport { height:480px; max-width:1280px; overflow:hidden; touch-action:pan-y pinch-zoom; }
+[data-journey-team] .orbit-person { display:none; pointer-events:none; }
+[data-journey-team] .orbit-floor { pointer-events:none; }
+[data-journey-team] .orbit-person[data-team-selected="true"] { display:block; visibility:visible; }
+[data-journey-team][data-team-ready="true"] .orbit-person,
+[data-journey-team][data-team-wordmark-ready="true"] .orbit-brandmark,
+[data-journey-team][data-team-stage-ready="true"] .orbit-floor { display:none; }
+/* 已裁好的透明人物与三维纹理共用取景，不再叠加原始大画幅的蒙版与偏移。 */
+.orbit-person[data-portrait-cutout] img {
+  width:100%; height:100%; left:0; top:0; object-fit:contain;
+  -webkit-mask-image:none; mask-image:none;
+}
+[data-journey-team] .journey-retry {
+  position:absolute; z-index:8; left:50%; bottom:12px; transform:translateX(-50%);
+  min-height:44px; padding:9px 16px; border:1px solid #897499;
+  color:#f4eff7; background:#100c16ed; font:inherit; cursor:pointer;
+}
+[data-journey-team] .orbit-controls { margin:8px auto 0; min-height:52px; }
+[data-journey-team] .orbit-caption { margin-top:22px; }
+[data-journey-team] .orbit-credentials { max-width:min(100%,780px); height:auto; max-height:none; overflow:visible; font-size:18px; line-height:1.7; }
+[data-journey-team] [data-orbit-name] { font-size:36px; }
+[data-journey-team] .orbit-members { margin:38px auto 0; }
+[data-journey-team] .orbit-members button { min-height:48px; }
+@media(max-width:760px) {
+  [data-journey-team] .orbit-viewport { height:390px; width:100%; }
+  [data-journey-team] .orbit-credentials { font-size:16px; }
+  [data-journey-team] [data-orbit-name] { font-size:32px; }
+}

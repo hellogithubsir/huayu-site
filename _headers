@@ -1,0 +1,4 @@
+# Pages会自动执行此响应编码；上传的GLB保持原始二进制，不能预先gzip。
+/motion/*.glb
+  Content-Encoding: gzip
+  Content-Type: model/gltf-binary

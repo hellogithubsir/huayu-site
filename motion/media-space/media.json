@@ -1,0 +1,200 @@
+[
+  {
+    "id": "dragon-tail",
+    "category": "training",
+    "title": {
+      "zh": "神龙摆尾",
+      "en": "Dragon-tail return"
+    },
+    "credit": {
+      "zh": "华羽日常社 · 抖音原片",
+      "en": "Huayu Daily · Original Douyin film"
+    },
+    "sourceUrl": "https://www.douyin.com/video/7650813617557935086",
+    "publisher": {
+      "name": "华羽日常社",
+      "douyinId": "28244222716",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAaHybyuk0gV6ZRvMnuBQEJXw39mcPnwvTIHlfQdpGyEFcHF6qx0SpBcVYJ4MX5cJQ"
+    },
+    "originalTitle": "这个神龙摆尾你能做到吗～#刘辉羽毛球 #周萌 #华羽 #日常",
+    "publishedAt": "2026-06-13 17:44",
+    "poster": "./assets/daily/posters/dragon-tail.jpg",
+    "sourceSize": [
+      1440,
+      1080
+    ],
+    "duration": 108.9,
+    "previewDuration": 6,
+    "previewRange": [
+      12,
+      18
+    ],
+    "posterTime": 13,
+    "previewBytes": 770499
+  },
+  {
+    "id": "court-duo",
+    "category": "training",
+    "title": {
+      "zh": "场上互动",
+      "en": "On court together"
+    },
+    "credit": {
+      "zh": "华羽日常社 · 抖音原片",
+      "en": "Huayu Daily · Original Douyin film"
+    },
+    "sourceUrl": "https://www.douyin.com/video/7660058304374704550",
+    "publisher": {
+      "name": "华羽日常社",
+      "douyinId": "28244222716",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAaHybyuk0gV6ZRvMnuBQEJXw39mcPnwvTIHlfQdpGyEFcHF6qx0SpBcVYJ4MX5cJQ"
+    },
+    "originalTitle": "这两个人会打球吗 #华羽 #日常 #羽毛球 #刘辉 #周萌 @周萌-✨ @刘辉羽毛球",
+    "publishedAt": "2026-07-08 19:00",
+    "poster": "./assets/daily/posters/court-duo.jpg",
+    "sourceSize": [
+      2160,
+      3840
+    ],
+    "duration": 83.884,
+    "previewDuration": 6,
+    "previewRange": [
+      19,
+      25
+    ],
+    "posterTime": 20,
+    "previewBytes": 528919
+  },
+  {
+    "id": "net-play",
+    "category": "training",
+    "title": {
+      "zh": "勾球比拼",
+      "en": "At the net"
+    },
+    "credit": {
+      "zh": "华羽日常社 · 抖音原片",
+      "en": "Huayu Daily · Original Douyin film"
+    },
+    "sourceUrl": "https://www.douyin.com/video/7654450085091051657",
+    "publisher": {
+      "name": "华羽日常社",
+      "douyinId": "28244222716",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAaHybyuk0gV6ZRvMnuBQEJXw39mcPnwvTIHlfQdpGyEFcHF6qx0SpBcVYJ4MX5cJQ"
+    },
+    "originalTitle": "你们觉得谁勾的好#华羽 #羽毛球技术 #刘辉羽毛球 #羽毛球勾球 #日常",
+    "publishedAt": "2026-06-23 18:00",
+    "poster": "./assets/daily/posters/net-play.jpg",
+    "sourceSize": [
+      1920,
+      1080
+    ],
+    "duration": 139.734,
+    "previewDuration": 6,
+    "previewRange": [
+      16,
+      22
+    ],
+    "posterTime": 17,
+    "previewBytes": 781547
+  },
+  {
+    "id": "box-challenge",
+    "category": "daily",
+    "title": {
+      "zh": "抽纸箱挑战",
+      "en": "The cardboard challenge"
+    },
+    "credit": {
+      "zh": "华羽日常社 · 抖音原片",
+      "en": "Huayu Daily · Original Douyin film"
+    },
+    "sourceUrl": "https://www.douyin.com/video/7655767766414885038",
+    "publisher": {
+      "name": "华羽日常社",
+      "douyinId": "28244222716",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAaHybyuk0gV6ZRvMnuBQEJXw39mcPnwvTIHlfQdpGyEFcHF6qx0SpBcVYJ4MX5cJQ"
+    },
+    "originalTitle": "抽纸箱挑战，谁的威力最大？#华羽  #羽毛球发力 #羽毛球抽球 #羽毛球抽纸箱 #日常",
+    "publishedAt": "2026-06-27 17:00",
+    "poster": "./assets/daily/posters/box-challenge.jpg",
+    "sourceSize": [
+      3840,
+      2160
+    ],
+    "duration": 98.033,
+    "previewDuration": 6,
+    "previewRange": [
+      60,
+      66
+    ],
+    "posterTime": 61,
+    "previewBytes": 1929255
+  },
+  {
+    "id": "duo-daily",
+    "category": "daily",
+    "title": {
+      "zh": "辉萌组合日常",
+      "en": "Between rallies"
+    },
+    "credit": {
+      "zh": "华羽日常社 · 抖音原片",
+      "en": "Huayu Daily · Original Douyin film"
+    },
+    "sourceUrl": "https://www.douyin.com/video/7655768400405075913",
+    "publisher": {
+      "name": "华羽日常社",
+      "douyinId": "28244222716",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAaHybyuk0gV6ZRvMnuBQEJXw39mcPnwvTIHlfQdpGyEFcHF6qx0SpBcVYJ4MX5cJQ"
+    },
+    "originalTitle": "来看看“辉萌组合”的日常～#刘辉羽毛球 #周萌 #华羽 #日常 #羽毛球 @周萌-✨ @刘辉羽毛球",
+    "publishedAt": "2026-06-29 17:00",
+    "poster": "./assets/daily/posters/duo-daily.jpg",
+    "sourceSize": [
+      2160,
+      3840
+    ],
+    "duration": 58.141475,
+    "previewDuration": 6,
+    "previewRange": [
+      13,
+      19
+    ],
+    "posterTime": 14,
+    "previewBytes": 461030
+  },
+  {
+    "id": "live-behind",
+    "category": "behind",
+    "title": {
+      "zh": "直播幕后",
+      "en": "Behind the broadcast"
+    },
+    "credit": {
+      "zh": "华羽日常社 · 抖音原片",
+      "en": "Huayu Daily · Original Douyin film"
+    },
+    "sourceUrl": "https://www.douyin.com/video/7702741110754321003",
+    "publisher": {
+      "name": "华羽日常社",
+      "douyinId": "28244222716",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAaHybyuk0gV6ZRvMnuBQEJXw39mcPnwvTIHlfQdpGyEFcHF6qx0SpBcVYJ4MX5cJQ"
+    },
+    "originalTitle": "体育电视台同款设备，十个机位！这直播设备效果拉满了 #刘辉羽毛球 #华羽 #直播 #直播设备 #日常 @周萌-✨ @刘辉羽毛球",
+    "publishedAt": "2026-10-31 16:09",
+    "poster": "./assets/daily/posters/live-behind.jpg",
+    "sourceSize": [
+      2160,
+      3840
+    ],
+    "duration": 26.4,
+    "previewDuration": 6,
+    "previewRange": [
+      6,
+      12
+    ],
+    "posterTime": 7,
+    "previewBytes": 981838
+  }
+]
